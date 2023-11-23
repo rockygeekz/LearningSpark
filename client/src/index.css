@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 110px;
+  background-color: #ffffff;
+  /* background-color: aqua ;  */
+}
+
+/* nav{
+
+} */
+
+ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+#Home {
+  background-color: blueviolet;
+  height: calc(100vh - 110px);
+}
+
+.hero-text {
+  background-color: aqua;
+  margin-top: 10%;
+  min-width: 50%;
+  width: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 5px;
+  font-family: sans-serif;
+}
+.hero-image {
+  background-color: green;
+  margin-top: 10%;
+  min-width: 50%;
+  text-align: center;
+}
+
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 35rem;
+    margin-left: 40px;
+    background-color: red;
+}
+button{
+    background-color: blue;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1em;
+
+}
+.second{
+    margin-top: 2rem;
+}
+
+
+
+
+/* An inspiring image of a student immersed in a subject they are passionate about, surrounded by a network of interconnected students, symbolizing the collaborative learning environment. */
