@@ -11,23 +11,25 @@ font-family: 'Playfair Display', serif; */
   padding: 0;
   box-sizing: border-box;
 }
+.body{
+  background-color: #a3a4a5;
+}
 
-nav ul {
+.navbar .navUl {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-  background-color: #ffffff;
+  /* width: 100%; */
+  /* background-color: #a3a4a5; */
 }
 
 
-ul li {
+.navUl li {
   list-style: none;
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  font-family: 'Playfair Display', serif;
-  font-weight: bolder;
-  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder; 
 }
 
 .liNavBtn{
@@ -54,19 +56,43 @@ padding-right: 1rem;
 }
 
 .navItems{
-  margin-left: 3rem;
+  text-align: center;
+  margin-left: 2rem;
 
 }
 
 
-.navItems:hover{
-  color: #5410ff;
-  transform: scale(1.4);
-  /* transform-origin: left; */
-  transition: 0.6s ease-out;
-  text-shadow: 0 0 5px #101cff;
+/* .navItems:hover::after{
+  content:" ";
   cursor: pointer;
-}
+  width: 10px;
+  height:8px;
+  border-radius: 50%;
+  position:absolute;
+  top: 5rem;
+  background-color : rgb(13, 136, 136);
+  transform: scaleX(1.8);
+  transition:all 1s;
+} */
+
+.navItems{
+  position:relative;
+  &:before{
+    content:'';
+    width:0;
+    border-radius: 15%;
+    top: 80px;
+    height:5px;
+    z-index:0;
+    position:absolute;
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover{
+    background-position: 0%;
+    &:before{
+      width:100%;
+    }}}
 
 
 
@@ -81,6 +107,7 @@ padding-right: 1rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
+
 .navBtn:hover{
   background-color: rgb(5, 93, 5);
   cursor: pointer;
@@ -94,33 +121,37 @@ padding-right: 1rem;
 
 .hero-section{
  height: 15rem;
+ /* display: flex; */
  margin-bottom: 1rem;
 }
 
 .hero-text {
    padding-left: 10%;
-   
+  /* width: 100px; */
 }
-.hero-image,h1{
+h1{
   font-family: 'Cormorant Upright', serif;
   font-weight: bolder;
   font-size: 5rem;
 }
-.hero-image,h3{
-  width: 50%;
+h3{
+  width: 40%;
   padding: 0.7rem 0 0.2rem 0;
   font-size: 1.5rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .hero-image {
+  position: absolute;
+  transform: rotate(10deg);
+  top:5rem;
+  right: 10rem;
+  width: 350px;
+  z-index: 1;
 }
 
-.second{
-    
-}
 
-button{
+.hero-text button{
   background-color: rgb(5, 136, 166);
   font-size: 1.5rem;
   border: none;
@@ -130,8 +161,6 @@ button{
   border-radius: 1rem;
 }
 
-
-
 .cardsContainer{
   display: flex;
   flex-wrap: wrap;
@@ -139,20 +168,121 @@ button{
 }
 
 .cardsDiv{
-  background-color: #b4b5b7;
-  width: 30rem;
-  height: 19rem;
-  border-radius: 3rem;
+  background-color: 	#898888;
+  width: 28rem;
+  height: 18rem;
+  margin: 2rem 1rem 1rem 1rem;
+  border-radius: 4rem;
+  z-index: 0;
+  transition: all 1s linear 0s;
 }
 
-.cardsBackground{
-  position: absolute;
-  background-color: #93969c;
-  width: 100%;
-  height: 15rem;
-  bottom: 0rem;
-  z-index: -1;
+
+.cardsDiv span{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  text-decoration: underline;
 }
+.cardsDiv p{
+  text-align:justify;
+  padding: 1rem 2.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+
+}
+
+.cardsDiv:hover{
+ transform: scale(1.1,1.1);
+ cursor: pointer;
+ z-index: 2;
+}
+.cardLogo{
+  position: relative;
+  top: 1rem;
+  left: 21rem;
+}
+
+.flag{
+  position: absolute;
+  width:6rem;
+  height: 6rem;
+  border-radius: 40%;
+  background-color: #a3a4a5;
+  box-shadow: 10px 10px 10px rgb(55, 55, 55);
+  z-index: 1;
+}
+
+.banner-1{
+  right:28rem;
+  bottom: 13rem;
+  animation: shaking 4s linear 0s infinite alternate;
+
+}
+.banner-2{
+  right:4rem;
+  bottom: 28rem;
+  animation: shaking 3s linear 0s infinite alternate;
+
+}
+.banner-3{
+  right:39rem;
+  bottom: 23rem;
+  animation: shaking 5s linear 0s infinite alternate none;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+
+}
+
+
+
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(30deg); }
+  30% { transform: rotate(0deg); }
+  45% { transform: rotate(-30deg); }
+  60% { transform: rotate(0deg); }
+  75% { transform: rotate(40deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-40deg); }
+}
+
+
+.footUl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li{
+  font-family: 'Inter', sans-serif;
+  color: #444444;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+
+footer .ul-2 li a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+footer .ul-2 li a:hover{
+ text-decoration:underline;
+}
+
+footer .ul-2 li{
+  padding: 1.6rem 1rem 1rem 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+footer{
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
 
 
 /* An inspiring image of a student immersed in a subject they are passionate about, surrounded by a network of interconnected students, symbolizing the collaborative learning environment. */

@@ -9,9 +9,12 @@ const Home = () => {
             </h3>
           <button>Get started</button>
           </div>
-          <div className="hero-image">
-            
+          <div>
+            <img  className="hero-image" src="../images/frontImage.png" alt="book"/>
           </div>
+          <div className="flag banner-1"></div>
+          <div className="flag banner-2"></div>
+          <div className="flag banner-3"></div>
         </div>
       </>
     );
