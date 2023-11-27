@@ -4,12 +4,12 @@ import Header from "./components/Header";
 import FrontsCards from "./components/FrontsCards";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Aboutus from "./components/About";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import Aboutus from "./components/About";
 
 function App() {
   return (
