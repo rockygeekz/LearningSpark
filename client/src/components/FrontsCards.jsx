@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function FrontsCards() {
   return (
@@ -23,7 +24,7 @@ function FrontsCards() {
             born, nurturing a thriving community of engaged learners.
           </p>
         </div>
-        <div className="cardsDiv card-1">
+        <div className="cardsDiv card-1" onClick={()=> {useNavigate("/login")}}>
           <svg
             className="cardLogo"
             xmlns="http://www.w3.org/2000/svg"
