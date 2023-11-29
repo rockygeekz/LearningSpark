@@ -13,8 +13,9 @@ font-family: 'Playfair Display', serif; */
   padding: 0;
   box-sizing: border-box;
 }
-.body {
+body {
   /* background-color: #a3a4a5; */
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar .navUl {
@@ -75,8 +76,6 @@ font-family: 'Playfair Display', serif; */
   transition:all 1s;
 } */
 
-
-
 .navItems {
   z-index: 2;
   position: relative;
@@ -89,14 +88,13 @@ font-family: 'Playfair Display', serif; */
     position: absolute;
     background-color: aqua;
     transition: all 0.3s ease-in-out;
-    height:5px;
-    position:absolute;
+    height: 5px;
+    position: absolute;
     background-color: rgb(41, 58, 58);
     transition: all 0.5s ease-in-out;
   }
   &:hover ::before {
-    width:  100%;
-
+    width: 100%;
   }
 }
 
@@ -289,9 +287,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-
-
-
 .loginBody {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -366,7 +361,8 @@ input {
 
 .right-image {
   width: 300px;
-  height: 400px;
+  height: 300px;
+  margin-right: 2rem;
 }
 
 .about-boxes {
@@ -374,9 +370,15 @@ input {
   margin-top: 5rem;
   justify-content: space-evenly;
 }
+.about-boxes-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+}
 
 .box-head {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-left: 1rem;
 }
 .box-content {
@@ -385,9 +387,77 @@ input {
   font-size: 2rem;
   width: 85%;
 }
+.box-content-2 {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+  width: 85%;
+}
 
 .about-boxes {
   width: 98vw;
 }
+
+.Notes{
+  height: 100vh;
+  background-color: red;
+}
+
+.Activities{
+  background-color: #f2f2f2 ;
+  font-size: 2rem;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.title{
+  text-align: center;
+  font-size: 15rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  color: #444444;
+  letter-spacing: -1rem;
+}
+.title2{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 100;
+  margin-top: -1.5rem;
+}
+
+.card-container{
+  display: flex;
+  /* height: 100vh; */
+  margin: 1rem 0 3rem 4rem;
+}
+
+.cards{
+  height: 200px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.overview-section{
+  /* height: 100vh; */
+  /* background-color: #4caf50; */
+  margin: 2rem;
+  margin-left: 3rem;
+}
+
+.overview-head{
+  font-size: 4rem;
+  /* margin-left: 2rem; */
+  font-weight: 900;
+}
+.overview-content{
+  margin-right: 30rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+
 
 /* An inspiring image of a student immersed in a subject they are passionate about, surrounded by a network of interconnected students, symbolizing the collaborative learning environment. */
