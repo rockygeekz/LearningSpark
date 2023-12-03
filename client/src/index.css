@@ -6,7 +6,7 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-*,::after,::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ font-family: 'Playfair Display', serif; */
 
 .navbar .navUl {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* width: 100%; */
   /* background-color: #a3a4a5; */
 }
@@ -55,20 +55,25 @@ padding-right: 1rem;
   flex-grow: 1;
 }
 
-.navItems{
+.navItems a{
   text-align: center;
   margin-left: 2rem;
   cursor: pointer;
 }
 
 
-.navItems{
+.navItems a{
+  text-decoration: none;
+  color: black;
+}
+
+.navItems a{
   z-index: 2;
   position:relative;
   &:before{
     content:'';
     width:0;
-    top: 80px;
+    top: 30px;
     height:5px;
     position:absolute;
     background-color: rgb(41, 58, 58);
@@ -143,6 +148,11 @@ h3{
   padding: 0.7rem;
   margin-top: 0.7rem;
   border-radius: 1rem;
+}
+
+.hero-text button:hover{
+  background-color: rgb(4, 117, 143);
+  cursor: pointer;
 }
 
 .cardsContainer{
@@ -285,7 +295,8 @@ footer{
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 400px;
+  height: 50vh;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -298,12 +309,12 @@ footer{
   }
 }
 
-label {
+.loginLabel {
   display: block;
   margin-bottom: 8px;
 }
 
-input {
+.loginInput {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;

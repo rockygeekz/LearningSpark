@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  let navigate = useNavigate();
     return (
       <>
         <div className="hero-section">
@@ -7,7 +10,7 @@ const Home = () => {
             <h3 className='second' >
             Discover a world of knowledge and growth, fueled by the collective wisdom of your peers.
             </h3>
-          <button>Get started</button>
+          <button onClick={()=> navigate("/academics/notes")}>Get started</button>
           </div>
           <div>
             <img  className="hero-image" src="../images/frontImage.png" alt="book"/>

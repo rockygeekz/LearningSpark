@@ -1,7 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 function FrontsCards() {
+  var navigate = useNavigate();
+
   return (
     <>
       <div className="cardsContainer">
@@ -24,7 +27,7 @@ function FrontsCards() {
             born, nurturing a thriving community of engaged learners.
           </p>
         </div>
-        <div className="cardsDiv card-1" onClick={()=> {useNavigate("/login")}}>
+        <div className="cardsDiv card-1" onClick={()=> { navigate("/login")}}>
           <svg
             className="cardLogo"
             xmlns="http://www.w3.org/2000/svg"
