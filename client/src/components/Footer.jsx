@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -29,6 +30,7 @@ function Footer() {
             <a href="">Activites</a>
           </li>
         </ul>
+        <Link to='/notes' ><button>Notes</button></Link>
       </footer>
     </>
   );
