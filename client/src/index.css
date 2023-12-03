@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Montserrat&family=Playfair+Display:ital,wght@1,500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,200;0,300;1,100;1,200&family=Righteous&family=Yantramanav&display=swap');
+
 /* font-family: 'Cormorant Upright', serif;
 font-family: 'Inter', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Archivo Black', sans-serif;
 font-family: 'Playfair Display', serif; */
 
 *,
@@ -17,6 +20,7 @@ body {
   /* background-color: #a3a4a5; */
   font-family: 'Inter', sans-serif;
 }
+
 
 .navbar .navUl {
   display: flex;
@@ -116,9 +120,11 @@ body {
 }
 
 .hero-section {
-  height: 15rem;
-  /* display: flex; */
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  margin-top: 5rem;
 }
 
 .hero-text {
@@ -126,25 +132,37 @@ body {
   /* width: 100px; */
 }
 h1 {
-  font-family: "Cormorant Upright", serif;
   /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: "Cormorant Upright", serif;
+  font-family: 'Yantramanav', sans-serif;
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 9rem;
+  line-height: 7rem;
+  text-align: left;
+  /* background-color: red; */
 }
 h3 {
-  width: 40%;
+  /* width: 60%; */
   padding: 0.7rem 0 0.2rem 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
+  /* background-color: #4caf50; */
+  margin-top: 1rem;
+  text-align: left;
 }
 
-.hero-image {
+/* .hero-image {
   position: absolute;
-  transform: rotate(10deg);
   top: 5rem;
-  right: 10rem;
   width: 350px;
   z-index: 1;
+} */
+.hero-image {
+  margin-right: 3rem;
+  width: 350px;
+  transform: rotate(10deg);
 }
 
 .hero-text button {
@@ -155,6 +173,9 @@ h3 {
   padding: 0.7rem;
   margin-top: 0.7rem;
   border-radius: 1rem;
+}
+.btn{
+    text-align: center;
 }
 
 .cardsContainer {

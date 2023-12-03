@@ -7,9 +7,9 @@ const Home = () => {
             <h3 className='second' >
             Discover a world of knowledge and growth, fueled by the collective wisdom of your peers.
             </h3>
-          <button>Get started</button>
+          <button className="btn">Get started</button>
           </div>
-          <div>
+          <div className="hero-images" >
             <img  className="hero-image" src="../images/frontImage.png" alt="book"/>
           </div>
           {/* <div className="flag banner-1"></div>

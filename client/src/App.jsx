@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import FrontsCards from "./components/FrontsCards";
@@ -21,11 +20,11 @@ function App() {
       <Router>
       <Header />
       <Home />
-      <FrontsCards />
       <Overview/>
       <Cards/>
       <Activities/>
       <Aboutus/>
+      <FrontsCards />
       <Footer />
         <Routes>
           <Route path="/login" element={<Login />} />
