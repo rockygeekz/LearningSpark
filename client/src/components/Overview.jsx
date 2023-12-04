@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Overview = () => {
   return (
@@ -7,8 +6,7 @@ const Overview = () => {
       Overview:
       </div>
       <div className="overview-content">
-      Empowered by comprehensive notes, unwavering support, collaborative study environments, engaging activities, and a student-led approach, [Your Institution Name] fosters a transformative learning experience that unlocks boundless potential. Join us and unleash your intellectual growth.
-      </div>
+      At StudentSpark, we believe in the transformative power of peer-powered learning. We're not just another notes repository; we're a vibrant community built by students, for students. Here, you'll find more than just comprehensive notes – you'll discover a supportive network of peers ready to help you excel.      </div>
     </div>
   )
 }
