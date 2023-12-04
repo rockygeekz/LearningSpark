@@ -32,7 +32,9 @@ function App() {
             }
           ></Route>
           <Route exact path="/login" element={<Login />} />
-          <Route path="/notes" element={<Notes />} />
+          <Route path="/academics/2022scheme" element={<Notes />} />
+          <Route path="/academics/2018scheme" element={<Notes />} />
+          <Route path="/academics/2021scheme" element={<Notes />} />
           <Route exact path="/login/userProfile" element={<Profiles />} />
         </Routes>
       </Router>

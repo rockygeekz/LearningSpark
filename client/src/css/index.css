@@ -15,7 +15,7 @@ font-family: 'Playfair Display', serif; */
   box-sizing: border-box;
 }
 body {
-  background-color: #a3a4a5;
+  /* background-color: #a3a4a5; */
   font-family: 'Inter', sans-serif;
 }
 
@@ -55,6 +55,7 @@ body {
 }
 
 .logo {
+  /* position: absolute; */
   padding: 2rem;
   flex-grow: 1;
 }
@@ -62,26 +63,16 @@ body {
 .navItems {
   text-align: center;
   margin-left: 2rem;
-  cursor: pointer;
 }
 
-/* .navItems:hover::after{
-  content:" ";
-  cursor: pointer;
-  width: 10px;
-  height:8px;
-  border-radius: 50%;
-  position:absolute;
-  top: 5rem;
-  background-color : rgb(13, 136, 136);
-  transform: scaleX(1.8);
-  transition:all 1s;
-} */
 
 .navItems a{
   text-decoration: none;
   color: black;
 }
+
+
+
 
 .navItems a{
   z-index: 2;
@@ -95,9 +86,39 @@ body {
     background-color: rgb(41, 58, 58);
     transition: all 0.5s ease-in-out;
   }
-  &:hover ::before {
+  &:hover::before {
     width: 100%;
   }
+}
+
+
+.subNav{
+  display: none;
+  font-size: small;
+}
+
+.subNav li {
+  padding: 1rem 1.3rem;
+  border-bottom: 2px black dotted;
+  cursor: pointer;
+}
+.subNav li:hover {
+ background-color: rgb(4, 119, 130);
+  cursor: pointer;
+}
+.subNav li:last-child{
+  border-bottom:none;
+}
+
+.navItems:hover .subNav{
+     display: block;
+     position: absolute;
+     background-color: white;
+     box-shadow:10px 10px 20px 1px black;
+     /* border-radius: 1rem; */
+     margin-left: -2.3rem;
+     /* border: 2px solid black; */
+     top: 80px;
 }
 
 .navBtn {
@@ -116,6 +137,8 @@ body {
   background-color: rgb(5, 93, 5);
   cursor: pointer;
 }
+
+
 
 .hero-section {
   height: calc(100vh - 80px);
@@ -136,7 +159,7 @@ h1 {
   font-family: "Cormorant Upright", serif;
   font-family: 'Yantramanav', sans-serif;
   font-weight: bolder;
-  font-size: 9rem;
+  font-size: 6rem;
   line-height: 7rem;
   text-align: left;
   /* background-color: red; */
@@ -144,7 +167,7 @@ h1 {
 h3 {
   /* width: 60%; */
   padding: 0.7rem 0 0.2rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Josefin Sans", sans-serif;
   /* background-color: #4caf50; */
   margin-top: 1rem;
@@ -158,9 +181,11 @@ h3 {
   z-index: 1;
 } */
 .hero-image {
-  margin-right: 3rem;
-  width: 350px;
-  transform: rotate(10deg);
+  /* position: absolute; */
+  /* margin-right: 50px; */
+  width: 500px;
+ height: 500px;
+ transform: rotate(-20deg);
 }
 
 .hero-text button {
