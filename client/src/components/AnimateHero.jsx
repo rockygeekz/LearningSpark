@@ -1,4 +1,4 @@
-import { motion, useAnimationControls } from "framer-motion";
+import { color, motion, useAnimationControls } from "framer-motion";
 import { useState } from "react";
 const AnimateHero = ({ children }) => {
   const controls = useAnimationControls();
