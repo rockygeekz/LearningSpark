@@ -141,6 +141,8 @@ body {
 
 .animate-hero{
   display: inline-block;
+  text-align: left;
+  
 }
 
 h1 {
