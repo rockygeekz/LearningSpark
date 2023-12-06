@@ -5,7 +5,7 @@ const Header = () => {
   let navigate = useNavigate();
  var [lightModeClicked,setClick] = useState(true);
     return (
-      < >
+      <>
         <nav className="navbar">
           <ul className="navUl">
               <li className="logo"><img src="..\Images\logo.png" alt="logo" style={{width:"180px"}}/></li>

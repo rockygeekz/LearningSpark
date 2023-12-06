@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Montserrat&family=Playfair+Display:ital,wght@1,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,200;0,300;1,100;1,200&family=Righteous&family=Yantramanav&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,200;0,300;1,100;1,200&family=Righteous&family=Yantramanav&display=swap");
 
 /* font-family: 'Cormorant Upright', serif;
 font-family: 'Inter', sans-serif;
@@ -9,22 +9,28 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Archivo Black', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-* {
+*,
+::after,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*::selection {
+  color: white;
+  background-color: black;
+}
 body {
   /* background-color: #a3a4a5; */
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
-
 .navbar .navUl {
   display: flex;
   /* justify-content: space-evenly; */
   /* width: 100%; */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   /* background-color: #a3a4a5; */
+  position: sticky;
 }
 
 .navUl li {
@@ -41,7 +47,7 @@ body {
   justify-content: flex-end;
   padding-right: 1rem;
 }
-.animate-hero{
+.animate-hero {
   display: inline-block;
 }
 .divBox {
@@ -67,24 +73,20 @@ body {
   margin-left: 2rem;
 }
 
-
-.navItems a{
+.navItems a {
   text-decoration: none;
   color: black;
 }
 
-
-
-
-.navItems a{
+.navItems a {
   z-index: 2;
-  position:relative;
-  &:before{
-    content:'';
-    width:0;
+  position: relative;
+  &:before {
+    content: "";
+    width: 0;
     top: 30px;
-    height:5px;
-    position:absolute;
+    height: 5px;
+    position: absolute;
     background-color: rgb(41, 58, 58);
     transition: all 0.5s ease-in-out;
   }
@@ -93,8 +95,7 @@ body {
   }
 }
 
-
-.subNav{
+.subNav {
   display: none;
   font-size: small;
 }
@@ -105,22 +106,22 @@ body {
   cursor: pointer;
 }
 .subNav li:hover {
- background-color: rgb(4, 119, 130);
+  background-color: rgb(4, 119, 130);
   cursor: pointer;
 }
-.subNav li:last-child{
-  border-bottom:none;
+.subNav li:last-child {
+  border-bottom: none;
 }
 
-.navItems:hover .subNav{
-     display: block;
-     position: absolute;
-     background-color: white;
-     box-shadow:10px 10px 20px 1px black;
-     /* border-radius: 1rem; */
-     margin-left: -2.3rem;
-     /* border: 2px solid black; */
-     top: 80px;
+.navItems:hover .subNav {
+  display: block;
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 20px 1px black;
+  /* border-radius: 1rem; */
+  margin-left: -2.3rem;
+  /* border: 2px solid black; */
+  top: 80px;
 }
 
 .navBtn {
@@ -140,8 +141,6 @@ body {
   cursor: pointer;
 }
 
-
-
 .hero-section {
   height: calc(100vh - 80px);
   display: flex;
@@ -156,12 +155,12 @@ body {
 }
 h1 {
   /* font-family: 'Josefin Sans', sans-serif; */
-  font-family: 'Archivo Black', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-family: "Cormorant Upright", serif;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-weight: bolder;
-  font-size: 6rem;
+  font-size: 9rem;
   line-height: 7rem;
   text-align: left;
   /* background-color: red; */
@@ -169,7 +168,7 @@ h1 {
 h3 {
   /* width: 60%; */
   padding: 0.7rem 0 0.2rem 0;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
   /* background-color: #4caf50; */
   margin-top: 1rem;
@@ -185,9 +184,11 @@ h3 {
 .hero-image {
   /* position: absolute; */
   /* margin-right: 50px; */
-  width: 500px;
- height: 500px;
- transform: rotate(-20deg);
+  width: 350px;
+  height: 300px;
+  margin-right: 5rem;
+  border-radius: 90%;
+  /* transform: rotate(-20deg); */
 }
 
 .hero-text button {
@@ -199,11 +200,11 @@ h3 {
   margin-top: 0.7rem;
   border-radius: 1rem;
 }
-.btn{
-    text-align: center;
-}
+/* .btn {
+  text-align: center;
+} */
 
-.hero-text button:hover{
+.hero-text button:hover {
   background-color: rgb(4, 117, 143);
   cursor: pointer;
 }
@@ -451,39 +452,39 @@ footer {
   width: 98vw;
 }
 
-.Notes{
+.Notes {
   height: 100vh;
   background-color: red;
 }
 
-.Activities{
-  background-color: #f2f2f2 ;
+.Activities {
+  background-color: #f2f2f2;
   font-size: 2rem;
   /* font-family: 'Montserrat', sans-serif; */
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 15rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   color: #444444;
   letter-spacing: -1rem;
 }
-.title2{
+.title2 {
   text-align: center;
   font-size: 5rem;
   font-weight: 100;
   margin-top: -1.5rem;
 }
 
-.card-container{
+.card-container {
   display: flex;
   /* height: 100vh; */
   margin: 1rem 0 3rem 4rem;
 }
 
-.cards{
+.cards {
   height: 200px;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -492,24 +493,22 @@ footer {
   margin: 0 20px;
 }
 
-.overview-section{
+.overview-section {
   /* height: 100vh; */
   /* background-color: #4caf50; */
   margin: 2rem;
   margin-left: 3rem;
 }
 
-.overview-head{
+.overview-head {
   font-size: 4rem;
   /* margin-left: 2rem; */
   font-weight: 900;
 }
-.overview-content{
+.overview-content {
   margin-right: 30rem;
   font-size: 2rem;
   margin-top: 3rem;
 }
-
-
 
 /* An inspiring image of a student immersed in a subject they are passionate about, surrounded by a network of interconnected students, symbolizing the collaborative learning environment. */

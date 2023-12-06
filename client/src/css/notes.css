@@ -1,37 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.notesHead{
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 20px;
+.notesHead {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 20px;
 }
-.containerForBranch{
-    display: flex;
-    width: 100%;
-    height:80vh;
-    justify-content: center;
-    align-items: start;
+.containerForBranch {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: start;
 }
 
-.containerItems{
-    margin: 10px 50px;
+.containerItems {
+  margin: 10px 50px;
 }
-.branch{
-    font-family: "Roboto Condensed",Sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    margin: 50px 10px;
-    padding: 10px 10px;
-    width: 100%;
-    text-transform: capitalize;
-    fill: #FFFFFF;
-    color: #fff;
-    background-color: #0e4d85;
-    border-style: solid;
-    border-color: #0e4d85;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.56);
+.branch {
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 50px 10px;
+  padding: 10px 10px;
+  width: 100%;
+  text-transform: capitalize;
+  fill: #ffffff;
+  color: #fff;
+  background-color: #0e4d85;
+  border-style: solid;
+  border-color: #0e4d85;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.56);
 }

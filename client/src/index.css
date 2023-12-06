@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Montserrat&family=Playfair+Display:ital,wght@1,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,200;0,300;1,100;1,200&family=Righteous&family=Yantramanav&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,200;0,300;1,100;1,200&family=Righteous&family=Yantramanav&display=swap");
 
 /* font-family: 'Cormorant Upright', serif;
 font-family: 'Inter', sans-serif;
@@ -16,22 +16,21 @@ font-family: 'Playfair Display', serif; */
   padding: 0;
   box-sizing: border-box;
 }
-*::selection{
+*::selection {
   color: white;
   background-color: black;
 }
 body {
   /* background-color: #a3a4a5; */
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 
 .navbar .navUl {
   display: flex;
   justify-content: space-evenly;
   /* width: 100%; */
   /* background-color: #a3a4a5; */
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   position: sticky;
 }
 
@@ -43,7 +42,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
-
+.animate-hero {
+  display: inline-block;
+}
 .liNavBtn {
   flex-grow: 0.4;
   justify-content: flex-end;
@@ -139,14 +140,12 @@ body {
   /* width: 100px; */
 }
 
-
-
 h1 {
   /* font-family: 'Josefin Sans', sans-serif; */
-  font-family: 'Archivo Black', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-family: "Cormorant Upright", serif;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-weight: bolder;
   font-size: 9rem;
   line-height: 7rem;
@@ -170,8 +169,8 @@ h3 {
   z-index: 1;
 } */
 .hero-image {
-  margin-right: 3rem;
-  width: 350px;
+  margin-right: 5rem;
+  width: 250px;
   border-radius: 90%;
   /* transform: rotate(10deg); */
 }
@@ -186,9 +185,8 @@ h3 {
   border-radius: 1rem;
 }
 
-
-.btn{
-    text-align: center;
+.btn {
+  text-align: center;
 }
 
 .cardsContainer {
@@ -433,40 +431,40 @@ input {
   width: 98vw;
 }
 
-.Notes{
+.Notes {
   height: 100vh;
   background-color: red;
 }
 
-.Activities{
-  background-color: #f2f2f2 ;
+.Activities {
+  background-color: #f2f2f2;
   font-size: 2rem;
   /* font-family: 'Montserrat', sans-serif; */
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 15rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   color: #444444;
   letter-spacing: -1rem;
 }
-.title2{
+.title2 {
   text-align: center;
   font-size: 5rem;
   font-weight: 100;
   margin-top: -1.5rem;
 }
 
-.card-container{
+.card-container {
   display: flex;
   /* height: 100vh; */
   margin: 1rem 0 3rem 4rem;
   gap: 3rem;
 }
 
-.cards{
+.cards {
   height: 300px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -482,30 +480,28 @@ input {
   transition: all 1s linear 0s;
 }
 
-.overview-section{
+.overview-section {
   /* height: 100vh; */
   /* background-color: #4caf50; */
   margin: 2rem;
   margin-left: 3rem;
 }
 
-.overlay{
+.overlay {
   height: 100%;
   width: 100%;
   background-color: red;
 }
 
-.overview-head{
+.overview-head {
   font-size: 4rem;
   /* margin-left: 2rem; */
   font-weight: 900;
 }
-.overview-content{
+.overview-content {
   margin-right: 30rem;
   font-size: 2rem;
   margin-top: 3rem;
 }
-
-
 
 /* An inspiring image of a student immersed in a subject they are passionate about, surrounded by a network of interconnected students, symbolizing the collaborative learning environment. */
