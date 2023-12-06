@@ -139,11 +139,7 @@ body {
   /* width: 100px; */
 }
 
-.animate-hero{
-  display: inline-block;
-  text-align: left;
-  
-}
+
 
 h1 {
   /* font-family: 'Josefin Sans', sans-serif; */
@@ -189,6 +185,8 @@ h3 {
   margin-top: 0.7rem;
   border-radius: 1rem;
 }
+
+
 .btn{
     text-align: center;
 }

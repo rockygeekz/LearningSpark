@@ -3,13 +3,10 @@ import Header from "./components/Header";
 import FrontsCards from "./components/FrontsCards";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Profiles from "./components/profiles";
 import Aboutus from "./components/About";
 import Activities from "./components/Activities"
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notes from "./components/Notes";
 import Cards from "./components/Cards.jsx"
 import Overview from "./components/Overview.jsx";
@@ -18,17 +15,27 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
-      <Home />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Home />
       <Overview/>
       <Cards/>
       <Activities/>
       <Aboutus/>
-      <FrontsCards />
-      <Footer />
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/notes" element={<Notes />} />
+                <FrontsCards />
+                <Footer />
+              </>
+            }
+          ></Route>
+          <Route exact path="/login" element={<Login />} />
+          <Route path="/academics/2022scheme" element={<Notes />} />
+          <Route path="/academics/2018scheme" element={<Notes />} />
+          <Route path="/academics/2021scheme" element={<Notes />} />
+          <Route exact path="/login/userProfile" element={<Profiles />} />
         </Routes>
       </Router>
     </div>

@@ -1,8 +1,8 @@
 import { motion, useAnimationControls } from "framer-motion";
 import { useState } from "react";
 const AnimateHero = ({ children }) => {
-    const controls = useAnimationControls();
-    const [isplaying,setIsplaying] = useState(false)
+  const controls = useAnimationControls();
+  const [isplaying, setIsplaying] = useState(false);
   const rubberBand = () => {
     controls.start({
       transform: [
@@ -13,25 +13,25 @@ const AnimateHero = ({ children }) => {
         "scale3d(0.9, 1.05, 1)",
         "scale3d(1, 1, 1)",
       ],
-      transition:{
-        times:[0,0.4,0.6,0.7,0.8]
-      }
+      transition: {
+        times: [0, 0.4, 0.6, 0.7, 0.8],
+      },
     });
-    setIsplaying(true)
+    setIsplaying(true);
   };
 
   return (
-    <motion.div
-      animate={controls}
-      onMouseOver={()=>{
-        if(!isplaying)
-        rubberBand()
-      }}
-      onAnimationComplete={()=>setIsplaying(false)}
-      className="animate-hero"
-    >
-      <h1>{children}</h1>
-    </motion.div>
+    <div className="animate-hero">
+      <motion.div
+        animate={controls}
+        onMouseOver={() => {
+          if (!isplaying) rubberBand();
+        }}
+        onAnimationComplete={() => setIsplaying(false)}
+      >
+        <h1 className="animate-hero">{children}</h1>
+      </motion.div>
+    </div>
   );
 };
 

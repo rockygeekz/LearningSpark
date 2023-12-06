@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimateHero from "./AnimateHero";
 const Home = () => {
   const herotextani = "Ignite Your Learning Spark".split("");
+  const navigate = useNavigate();
   return (
     <>
       <div className="hero-section">
@@ -20,7 +22,7 @@ const Home = () => {
             Discover a world of knowledge and growth, fueled by the collective
             wisdom of your peers.
           </h3>
-          <button className="btn">Get started</button>
+          <button onClick={()=> navigate("/academics/2022scheme")}>Get started</button>
         </div>
         <div className="hero-images">
           <motion.img
