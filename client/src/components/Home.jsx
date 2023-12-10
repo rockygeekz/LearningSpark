@@ -2,29 +2,38 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimateHero from "./AnimateHero";
 const Home = () => {
-  const herotextani = "Ignit Ur Learning Spark".split("");
+  const herotextani1 = "Ignite Your ".split("");
+  const herotextani2 = "Learning Spark !!".split("");
   const navigate = useNavigate();
   return (
     <>
       <div className="hero-section">
         <div className="hero-text">
-          {/* <motion.h1
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          >
-            Ignite Your Learning Spark
-          </motion.h1> */}
-          {herotextani.map((letter, index) => {
-            return <AnimateHero key={index}>{letter == " "? "\u00A0" : letter}</AnimateHero>;
+          <h1>
+            {herotextani1.map((letter, index) => {
+            return (
+              <AnimateHero key={index}>
+                {letter == " " ? "\u00A0" : letter}
+              </AnimateHero>
+            );
           })}
+          </h1>
+          <h2>{herotextani2.map((letter, index) => {
+            return (
+              <AnimateHero key={index}>
+                {letter == " " ? "\u00A0" : letter}
+              </AnimateHero>
+            );
+          })}</h2>
           <h3 className="second">
             Discover a world of knowledge and growth, fueled by the collective
             wisdom of your peers.
           </h3>
-          <button onClick={()=> navigate("/academics/2022scheme")}>Get started</button>
+          <button onClick={() => navigate("/academics/2022scheme")}>
+            Get started
+          </button>
         </div>
-        <div className="hero-images">
+        {/* <div className="hero-images">
           <motion.img
             initial={{ scale: 0, opacity: 0, rotate: -30 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -39,7 +48,7 @@ const Home = () => {
             src="../images/frontImage.png"
             alt="book"
           />
-        </div>
+        </div> */}
         {/* <div className="flag banner-1"></div>
           <div className="flag banner-2"></div>
           <div className="flag banner-3"></div> */}

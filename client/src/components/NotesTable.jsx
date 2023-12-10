@@ -7,7 +7,7 @@ function NotesTable(data) {
   return (
     <>
       <div className="tableContainer table-wrapper">
-        <h2 style={{ textAlign: "center" }}>{ise[data.data.sem - 1].sem+" "+data.data.branch.toUpperCase()}</h2>
+        <h2>{ise[data.data.sem - 1].sem+" "+data.data.branch.toUpperCase()}</h2>
         <table className="f1-table">
           <thead>
             <tr>

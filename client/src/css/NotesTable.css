@@ -8,16 +8,25 @@
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
 }
 
+h2{
+    background-color: rgb(92, 101, 109);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+th,td{
+    margin: 10px 10px;
+}
 table {
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid black;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 10px;
     width: 100%;
     max-width: 100%;
-    white-space: nowrap;
-    background-color: rgb(58, 58, 58);
+    /* white-space: nowrap; */
+    background-color: transparent;
 }
 
 table td,table th {
@@ -25,14 +34,10 @@ table td,table th {
     padding: 15px;
 }
 
-th{
-    border-bottom: 1px solid #605e5e;
-    border-left: 1px solid #605e5e;
-}
 
 table td {
     color: #ffffff;
-    border-right: 1px solid #605e5e;
+    /* border-right: 1px solid #050505; */
     font-size: 12px;
 }
 
@@ -43,6 +48,10 @@ table thead th {
 
 table tr:nth-child(even) {
     background: #919090;
+}
+
+table tr:nth-child(odd) {
+    background: #3c3c3c;
 }
 
 a{
