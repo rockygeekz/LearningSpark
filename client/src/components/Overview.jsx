@@ -1,3 +1,4 @@
+import '../css/index.css'
 
 const Overview = () => {
   return (

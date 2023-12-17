@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import AnimateHero from "./AnimateHero";
 import Header from "./Header";
 import Home from "./Home";
+import '../css/index.css'
+
 const Landingpage = () => {
   const herotextani = "Ignite Your Learning Spark".split("");
   const navigate = useNavigate();

@@ -4,7 +4,7 @@ import Marks from "./Mark.svg";
 import Resources from "./Resources.svg";
 import Join from "./Join.svg";
 import Promise from "./Promise.svg";
-
+import '../css/index.css'
 const Aboutus = () => {
   return (
     <div className="about">

@@ -5,19 +5,20 @@
 
 .tableContainer{
     margin: 10px 70px 70px;
-    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
 }
 
-h2{
-    background-color: rgb(92, 101, 109);
+.tableContainer h2{
+    color: white;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 10px;
+    font-family: "Montserrat", sans-serif;
 }
 
-th,td{
+.tableContainer th,td{
     margin: 10px 10px;
 }
-table {
+.tableContainer table {
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
@@ -29,37 +30,40 @@ table {
     background-color: transparent;
 }
 
-table td,table th {
+.tableContainer table td,table th {
     text-align: center;
     padding: 15px;
 }
 
 
-table td {
-    color: #ffffff;
+.tableContainer table td {
+    color: #000000;
     /* border-right: 1px solid #050505; */
-    font-size: 12px;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 table thead th {
     color: #ffffff;
     background: #161616;
+    font-family: "Montserrat", sans-serif;
 }
 
-table tr:nth-child(even) {
-    background: #919090;
+.tableContainer table tr:nth-child(even) {
+    background: #9fe3d5;
 }
 
-table tr:nth-child(odd) {
-    background: #3c3c3c;
+.tableContainer table tr:nth-child(odd) {
+    background: #2e8e80;
 }
 
-a{
-    color: rgb(5, 142, 46);
-
+.tableContainer a{
+    color: rgb(5, 32, 142);
     text-decoration: none;
+    font-weight: 500;
 }
-a:hover{
+.tableContainer a:hover{
     text-decoration-line: underline;
 }
 

@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AnimateHero from "./AnimateHero";
+import '../css/index.css'
+
 const Home = () => {
   const herotextani1 = "Ignite Your ".split("");
   const herotextani2 = "Learning Spark !!".split("");

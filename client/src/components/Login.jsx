@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import Profiles from './profiles';
+import '../css/index.css'
 
 
 function Login() {

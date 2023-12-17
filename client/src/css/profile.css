@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.profileContainer {
+  display: grid;
+  height: 119vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.2fr 1.3fr;
+  grid-template-areas:
+    "nav nav nav"
+    "details results academics"
+    "details classRanks vtuRanks";
+  grid-gap: 2rem;
+}
+
+.profileContainer nav {
+    grid-area: nav;
+    display: grid;
+    align-items: center;
+    background-color: rgb(96, 200, 183);
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 40px;
+}
+
+.profileContainer nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 1rem 3rem 1rem 3rem;
+}
+.profileContainer nav ul .spark{
+flex-grow: 1;
+}
+.profileContainer nav ul li a{
+    color: rgb(13, 24, 176);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    margin: 0 30px;
+}
+
+.profileContainer nav ul li a{
+position: relative;
+&:before {
+  content: "";
+  width: 0;
+  top: 30px;
+  height: 5px;
+  position: absolute;
+  background-color: rgb(41, 58, 58);
+  transition: all 0.5s ease-in-out;
+}
+&:hover::before {
+  width: 100%;
+}
+}
+.profileContainer .details{
+    grid-area: details;
+    margin: 2rem 2rem 2rem 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 24px black;
+    background-color: rgb(96, 200, 183);
+
+}
+.profileContainer .results{
+    grid-area: results;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px black;
+    overflow:auto;
+}
+.profileContainer .academics{
+    grid-area: academics;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px black;
+    margin: 0rem 2rem 0rem 0rem;
+}
+.classRanks{
+    grid-area: classRanks;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px black;
+    overflow:auto;
+}
+.profileContainer .vtuRanks{
+    grid-area: vtuRanks;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px black;
+    margin: 0rem 2rem 0rem 0rem;
+
+}
+
+
+.logout {
+  background-color: rgb(5, 93, 5);
+  color: azure;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  border-radius: 0.9rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logout:hover {
+  background-color: rgb(179, 3, 3);
+  cursor: pointer;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details h1{
+  padding: 30px 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.name{
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10%;
+}
+
+.studentDetails td{
+  padding: 0% 0% 10% 10%;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.studentDetails{
+  width: 65%;
+}
+
+.profilePic{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: azure;
+}
+
+
+.academics h1{
+  padding: 30px 10px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.studentAcademics td{
+  padding: 0% 0% 10% 10%;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.studentAcademics{
+  width: 100%;
+}
+.studentResults{
+  width: 100%;
+}
+.studentRanks{
+  width: 100%;
+}
+
+.results h1{
+  padding: 30px 10px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.studentResults td{
+  padding: 0% 0% 10% 10%;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rankings h1{
+ padding-bottom: 40px;
+ padding-top: 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+
+.studentRanks td{
+  padding: 0% 5% 6% 5%;
+  font-size: 1.4;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.studentRanks td .nameAndUsn{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  font-weight:normal;
+}
+
+.underline::after{
+  content: " ";
+  width: 100%;
+  top: 30px;
+  height: 5px;
+  position: absolute;
+  background-color: rgb(41, 58, 58);
+}
+
+.analysis{
+  top: 45%;
+  left: 15%;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+}
