@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import Marks from "./Mark.svg";
 import Resources from "./Resources.svg";
