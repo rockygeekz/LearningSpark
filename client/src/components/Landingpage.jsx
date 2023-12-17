@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 import AnimateHero from "./AnimateHero";
 import Header from "./Header";
 import Home from "./Home";
-import '../css/index.css'
-
+import Header2 from "./Header2";
 const Landingpage = () => {
   const herotextani = "Ignite Your Learning Spark".split("");
   const navigate = useNavigate();
@@ -12,9 +11,10 @@ const Landingpage = () => {
     <>
     <div className="land">
       <div className="overlay-vid"></div>
-      <video autoPlay muted loop  src="../images/bgvid2.mp4" type="video/mp4"></video>
+      <video autoPlay muted   src="../images/bgvid2.mp4" type="video/mp4"></video>
         <div className="nav-land">
-        <Header/>
+        {/* <Header/> */}
+        <Header2/>
             </div>
         <Home/>
     </div>

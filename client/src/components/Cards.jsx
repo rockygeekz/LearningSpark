@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 const Card = () => {
   return (
     <>
-      <div className="card-container">
+      {/* <div className="card-container">
         <Tilt>
           <div className="cards">
             <div className="overlay">
@@ -26,7 +26,8 @@ const Card = () => {
         <Tilt>
           <div className="cards"></div>
         </Tilt>
-      </div>
+      </div> */}
+      h
     </>
   );
 };
