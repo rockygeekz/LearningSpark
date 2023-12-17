@@ -30,7 +30,6 @@ function Footer() {
             <a href="">Activites</a>
           </li>
         </ul>
-        <Link to='/notes' ><button>Notes</button></Link>
       </footer>
     </>
   );
