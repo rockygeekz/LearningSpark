@@ -9,17 +9,11 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Archivo Black', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-*::selection {
-  color: black;
-  background-color: white;
-}
+
 body {
   /* background-color: #a3a4a5; */
   font-family: "Inter", sans-serif;
@@ -66,14 +60,16 @@ body {
   color: #E74C3C;
 }
 .divBox {
-  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+  padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+  margin-right: 20px;
   border-radius: 0.7rem;
   background-color: transparent;
   border: 1px solid transparent;
+  background-color: #e1e6f0;
 }
 
 .divBox:hover {
-  background-color: #e1e6f0;
+  background-color: #ababab;
   cursor: pointer;
 
 }
@@ -103,7 +99,7 @@ body {
     top: 30px;
     height: 5px;
     position: absolute;
-    background-color: rgb(41, 58, 58);
+    background-color: rgb(44, 132, 240);
     transition: all 0.5s ease-in-out;
   }
   &:hover::before {
@@ -114,15 +110,23 @@ body {
 .subNav {
   display: none;
   font-size: small;
+  width: auto;
+  position: absolute;
+  background-color: white;
+  box-shadow: 10px 10px 20px 1px black;
+  margin-left: -2.3rem;
+  top: 80px;
 }
 
 .subNav li {
   padding: 1rem 1.3rem;
   border-bottom: 2px black dotted;
   cursor: pointer;
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
-.subNav li:hover {
-  background-color: rgb(4, 119, 130);
+.subNav li:hover{
+  background-color: #10b87a;
   cursor: pointer;
 }
 .subNav li:last-child {
@@ -131,13 +135,7 @@ body {
 
 .navItems:hover .subNav {
   display: block;
-  position: absolute;
-  background-color: white;
-  box-shadow: 10px 10px 20px 1px black;
-  /* border-radius: 1rem; */
-  margin-left: -2.3rem;
-  /* border: 2px solid black; */
-  top: 80px;
+
 }
 
 .navBtn {
