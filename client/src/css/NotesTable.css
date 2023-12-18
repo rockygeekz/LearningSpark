@@ -4,7 +4,7 @@
 }
 
 .tableContainer{
-    margin: 10px 70px 70px;
+    margin: 10px 70px 10px 70px;
 }
 
 .tableContainer h2{
@@ -66,6 +66,52 @@ table thead th {
 .tableContainer a:hover{
     text-decoration-line: underline;
 }
+
+@media screen and (max-width: 650px) {
+
+    
+.tableContainer{
+    margin: 10px 40px 10px 40px;
+}
+
+.tableContainer table {
+    font-size: 18px;
+}
+
+.tableContainer table td {
+    font-size: 15px;
+}
+.tableContainer h2{
+    font-size: 17px;
+}
+
+  }
+@media screen and (max-width: 530px) {
+
+    
+.tableContainer{
+    margin: 10px 20px 10px 20px;
+}
+
+.tableContainer table {
+    font-size: 15px;
+}
+
+.tableContainer table td {
+    font-size: 14px;
+}
+.tableContainer h2{
+    font-size: 13px;
+}
+
+  }
+  @media screen and (max-width: 440px) {
+    .tableDiv{
+        overflow: scroll;
+    }
+  }
+
+
 
 
 /* @media (max-width: 767px) {

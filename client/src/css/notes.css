@@ -17,7 +17,7 @@ font-family: 'Playfair Display', serif; */
 .notesHead {
   font-size: 5rem;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 30px 0px 30px;
   color: rgb(70, 40, 69);
   font-family: 'Cormorant Upright', serif;
 }
@@ -93,9 +93,46 @@ font-family: 'Playfair Display', serif; */
 }
 
 option{
-  margin-top: 100px;
   background-color: rgb(57, 194, 182);
   font-weight: bolder;
   color: rgb(4, 5, 7);
 }
 
+@media screen and (max-width: 950px) {
+  .notesHead{
+    font-size: 4.5rem;
+  }
+  .branchAndSemister{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .notesHead{
+    font-size: 4rem;
+  }
+  .inputContainer{
+    padding-top: 35px;
+  }
+  .containerForBranch{
+    min-width: 350px;
+  }
+  #branch{
+    font-size: 1.5rem;
+}
+  
+}
+@media screen and (max-width: 450px) {
+  .notesHead{
+    font-size: 3rem;
+  }
+  .inputContainer{
+    padding-top: 25px;
+  }
+  .containerForBranch{
+    min-width: 290px;
+  }
+  #branch{
+    font-size: 1.2rem;
+}
+}
