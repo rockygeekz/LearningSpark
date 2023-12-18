@@ -1,86 +1,86 @@
-.links li{
-    list-style: none;
-    padding: 0 3rem;
-    font-size: 1.5rem;
-    font-weight: 800;
-    position: relative;
+.links li {
+  list-style: none;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  position: relative;
 }
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between  ;
-    color: white;
-    padding: 20px 50px;
-    box-shadow: 0 2px 9px 0 rgba(0, 0, 0,1);
-    background-color: rgb(0, 0, 0,0.2);
-    position: sticky;
-    backdrop-filter: blur(2px);
-    height: 100px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 50px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 1);
+  background-color: rgb(0, 0, 0, 0.2);
+  position: sticky;
+  backdrop-filter: blur(2px);
+  height: 100px;
 }
-.links li a:hover{
-    color: orange;
-    transition: 0.3s ease-in-out;
+.links li a:hover {
+  color: orange;
+  transition: 0.3s ease-in-out;
 }
 
-.links{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .links li a:hover::after,
-.links li a.active::after{
-    content: "";
-    width: 45%;
-    height: 2px;
-    background: orange;
-    position: absolute;
-    bottom: -9px;
-    left: 45px;
+.links li a.active::after {
+  content: "";
+  width: 45%;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  bottom: -9px;
+  left: 45px;
 }
-#device{
-    color: white;
-    display: none;
+#device {
+  color: white;
+  display: none;
 }
 
 @media screen and (max-width: 769px) {
-    .links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-      justify-content: flex-start;
-      position: fixed;
-      top: 80px;
-      right: -300px;
-      width: 300px;
-      height: 100vh;
-      padding: 40px 0 0 10px;
-      transition: 0.3s ease-in-out;
-      z-index: 100;
-      box-shadow: 0 2px 9px 0 rgba(0, 0, 0,1);
-      background-color: rgb(0, 0, 0,0.6);
-      backdrop-filter: blur(100px);
-      margin: 20px 0;
-    }
-  
-    .links#active {
-      right: 0px;
-    }
-  
-    .links li {
-      margin-bottom: 25px;
-    }
-  
-    #device {
-      display: block;
-    }
-  
-    #device i {
-      font-size: 24px;
-      cursor: pointer;
-    }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 80px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 1);
+    background-color: rgb(0, 0, 0, 0.6);
+    backdrop-filter: blur(100px);
+    margin: 20px 0;
   }
+
+  .links#active {
+    right: 0px;
+  }
+
+  .links li {
+    margin-bottom: 25px;
+  }
+
+  #device {
+    display: block;
+  }
+
+  #device i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

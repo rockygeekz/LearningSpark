@@ -8,7 +8,7 @@
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
 }
 
-h2{
+.tableContainer h2{
     background-color: rgb(92, 101, 109);
     text-align: center;
     padding: 10px 10px;
@@ -54,12 +54,12 @@ table tr:nth-child(odd) {
     background: #3c3c3c;
 }
 
-a{
+td a{
     color: rgb(5, 142, 46);
 
     text-decoration: none;
 }
-a:hover{
+td a:hover{
     text-decoration-line: underline;
 }
 
