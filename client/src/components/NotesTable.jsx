@@ -8,6 +8,7 @@ function NotesTable(data) {
     <>
       <div className="tableContainer table-wrapper">
         <h2>{ise[data.data.sem - 1].sem+" "+data.data.branch.toUpperCase()}</h2>
+        <div className="tableDiv">
         <table className="f1-table">
           <thead>
             <tr>
@@ -32,6 +33,7 @@ function NotesTable(data) {
             })}
           </tbody>
         </table>
+        </div>
       </div>
     </>
   );

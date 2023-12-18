@@ -1,25 +1,25 @@
-.links li {
-  list-style: none;
-  padding: 0 3rem;
-  font-size: 1.5rem;
-  font-weight: 800;
-  position: relative;
+.links li{
+    list-style: none;
+    padding: 0 3rem;
+    font-size: 1rem;
+    font-weight: 800;
+    position: relative;
 }
 a {
   text-decoration: none;
   color: white;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  padding: 20px 50px;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 1);
-  background-color: rgb(0, 0, 0, 0.2);
-  position: sticky;
-  backdrop-filter: blur(2px);
-  height: 100px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0,1);
+    background-color: rgb(0, 0, 0,0.2);
+    position: sticky;
+    /* backdrop-filter: blur(2px); */
+    height: 50px;
 }
 .links li a:hover {
   color: orange;
