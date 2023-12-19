@@ -26,10 +26,10 @@ function App() {
                 {/* <Header/> */}
                 {/* <Home/> */}
       <Overview/>
-      <Cards/>
+      {/* <Cards/> */}
       <Activities/>
       <Aboutus/>
-                <FrontsCards />
+                {/* <FrontsCards /> */}
                 <Footer />
               </>
             }

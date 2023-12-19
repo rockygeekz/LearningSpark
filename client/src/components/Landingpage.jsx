@@ -11,7 +11,7 @@ const Landingpage = () => {
     <>
     <div className="land">
       <div className="overlay-vid"></div>
-      <video autoPlay muted   src="../images/bgvid2.mp4" type="video/mp4"></video>
+      <video autoPlay muted   src="../images/bgvid22.mp4" type="video/mp4"></video>
         <div className="nav-land">
         {/* <Header/> */}
         <Header2/>

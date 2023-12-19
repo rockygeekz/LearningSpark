@@ -4,7 +4,7 @@ import '../css/index.css'
 
 function Footer() {
   return (
-    <>
+    <div className="footer-cover">
       <footer>
         <ul className="footUl">
           <li>
@@ -32,7 +32,7 @@ function Footer() {
           </li>
         </ul>
       </footer>
-    </>
+    </div>
   );
 }
 

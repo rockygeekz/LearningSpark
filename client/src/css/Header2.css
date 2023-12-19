@@ -47,7 +47,7 @@ nav{
   display: none;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 600px) {
   .links {
     display: flex;
     flex-direction: column;
