@@ -4,7 +4,7 @@ const Header2 = () => {
   const [click, setClick] = useState(true);
   return (
     <div className="Header">
-      <nav>
+      <nav className="nav">
         <div className="logo">LOGO</div>
         <div>
           <ul className="links" id={click ? "" : "active"} >
