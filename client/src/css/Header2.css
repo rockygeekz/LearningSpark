@@ -20,6 +20,7 @@ a {
     position: sticky;
     /* backdrop-filter: blur(2px); */
     height: 50px;
+    /* width: 100%; */
 }
 .links li a:hover {
   color: orange;
@@ -55,7 +56,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .links {
     display: flex;
     flex-direction: column;

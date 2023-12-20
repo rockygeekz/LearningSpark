@@ -8,7 +8,7 @@ const Header2 = () => {
       <nav className="nav">
       <li className="logo"><img src="..\Images\logo.png" alt="logo" style={{width:"180px"}}/></li>
         <div>
-          <ul className="links" id={click ? "" : "active"} >
+          <ul  className="links" id={click ? "" : "active"}>
             <li>
               <Link to="/#Home" smooth><a href="" className="active">Home</a></Link>
             </li>

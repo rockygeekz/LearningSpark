@@ -744,11 +744,7 @@ footer {
 
 
 @media (max-width: 800px) {
-  .land{
-    
-  .land {
-    display: none;
-  }
+ 
   .overview-content {
     margin-right: 30px;
     text-align: justify;
@@ -765,7 +761,7 @@ footer {
     height: 170vh;
   }
 }
-}
+
 
 @media (max-width: 800px) {
   .right-about {

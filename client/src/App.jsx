@@ -9,7 +9,7 @@ import Activities from "./components/Activities";
 import NotesTable from "./components/NotesTable.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Notes from "./components/Notes";
-import Cards from "./components/Cards.jsx";;
+import Cards from "./components/Cards.jsx";
 import Overview from "./components/Overview.jsx";
 import Landingpage from "./components/Landingpage.jsx";
 
@@ -22,14 +22,10 @@ function App() {
             path="/"
             element={
               <>
-                <Landingpage/>
-                {/* <Header/> */}
-                {/* <Home/> */}
-      {/* <Overview/> */}
-      {/* <Cards/> */}
-      {/* <Activities/> */}
-      <Aboutus/>
-                {/* <FrontsCards /> */}
+                <Landingpage />
+                <Overview />
+                <Activities />
+                <Aboutus />
                 <Footer />
               </>
             }
