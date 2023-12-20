@@ -5,7 +5,7 @@ const Header2 = () => {
   const [click, setClick] = useState(true);
   return (
     <div className="Header">
-      <nav>
+      <nav className="nav">
       <li className="logo"><img src="..\Images\logo.png" alt="logo" style={{width:"180px"}}/></li>
         <div>
           <ul className="links" id={click ? "" : "active"} >

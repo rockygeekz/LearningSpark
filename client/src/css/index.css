@@ -347,7 +347,6 @@ video {
     transform: rotate(-40deg);
   }
 }
-
 .footUl {
   display: flex;
   align-items: center;
@@ -375,11 +374,11 @@ footer .ul-2 li {
   padding: 1.6rem 1rem 1rem 1rem;
   list-style: none;
   text-decoration: none;
+  
 }
-.footer-cover {
-  padding-bottom: 2rem;
-  padding-top: 6rem;
-  background-color: #020614;
+
+footer  {
+  margin:7rem 2rem 2rem 2rem;
 }
 
 .loginBody {

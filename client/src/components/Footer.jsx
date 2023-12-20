@@ -22,9 +22,6 @@ function Footer() {
             <a href="">Login</a>
           </li>
           <li>
-            <a href="">About us</a>
-          </li>
-          <li>
             <a href="">Academics</a>
           </li>
           <li>
