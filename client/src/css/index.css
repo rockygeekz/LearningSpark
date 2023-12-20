@@ -772,7 +772,7 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .right-about {
     display: none;
   }
@@ -792,11 +792,7 @@ footer {
     height: 175vh;
   }
 }
-@media (max-width: 1000px) {
-  .overview-section {
-    height: 150vh;
-  }
-}
+
 @media (max-width: 1120px) {
   #Activities {
     margin: 0 4rem;
@@ -812,7 +808,7 @@ footer {
   .Activities-wrapper .title2 {
     font-size: 4rem;
   }
-  .inside-timeline{
+  .inside-timeline {
     font-size: 3rem;
   }
 }
@@ -821,9 +817,56 @@ footer {
     font-size: 8rem;
   }
   .Activities-wrapper .title2 {
-    font-size: 4rem;
+    font-size: 2.6rem;
   }
-  .inside-timeline{
+  .inside-timeline {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .Activities-wrapper .title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .overview-section {
+    height: 130vh;
+  }
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+  .overview-section {
+    height: 150vh;
+  }
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width:480px) {
+  .cards{
+    width: 250px;
+  }
+  .title-act{
+    font-size: 2rem;
+  }
+  .location-act{
+    font-size: 1.5rem;
+  }
+  .description-act{
+    font-size: 2rem;
+  }
+}
+@media (max-width:420px) {
+  .title-act{
+    font-size: 1.4rem;
+  }
+  .location-act{
+    font-size: 1.5rem;
+  }
+  .description-act{
+    font-size: 2rem;
   }
 }

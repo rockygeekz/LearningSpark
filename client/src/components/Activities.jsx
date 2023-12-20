@@ -27,13 +27,13 @@ const Activities = () => {
               dateClassName="date"
               iconStyle={yellow}
             >
-              <h3 className="vertical-timeline-element-title">
+              <h3 className="vertical-timeline-element-title title-act">
                 {element.title}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
+              <h5 className="vertical-timeline-element-subtitle location-act">
                 {element.location}
               </h5>
-              <p id="description">{element.description}</p>
+              <p id="description" className="description-act">{element.description} </p>
             </VerticalTimelineElement>
           );
         })}
