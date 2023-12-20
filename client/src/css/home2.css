@@ -33,11 +33,12 @@
   margin: 1rem 3rem 1rem 3rem;
 }
 .gridContainer .spark {
-  width: 170px;
+
+  width: 80px;
   position: fixed;
   z-index: 1;
   top: 15px;
-  left: 20px;
+  left: 50px;
 }
 .gridContainer nav ul li a {
   color: white;
@@ -97,18 +98,19 @@
   display: none;
 }
 
-.dropdown-menu li {
+.gridContainer .dropdown-menu li {
   padding: 30px 30px;
+
   display: flex;
   justify-content: center;
-  background-color: rgb(96, 200, 183);
+  background-color: rgb(8, 4, 62);
   backdrop-filter: blur(15px);
   box-shadow: 1px 1px 10px black;
 }
 
 
-.dropdown-menu li a {
-  color: black;
+.gridContainer .dropdown-menu li a {
+  color: rgb(236, 182, 66);
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
@@ -141,4 +143,26 @@
 .h-logout:hover {
   background-color: rgb(9, 179, 3);
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 750px) {
+  .visibility {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .gridContainer .visibility {
+    display: none;
+  }
+  .gridContainer .hamburger {
+    display: block;
+  }
+
+
 }

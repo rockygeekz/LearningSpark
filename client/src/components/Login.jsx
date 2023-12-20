@@ -16,16 +16,16 @@ function Login() {
         }
 
 
-let server = async (e) => {
-  e.preventDefault();
-  await axios.post('http://localhost:3030/api/v1/login', { data: credentials })
-  .then((response) => {
-    console.log()
-       setGotData(false);
-       setUserData(response);
-  })
+// let server = async (e) => {
+//   e.preventDefault();
+//   await axios.post('http://localhost:3030/api/v1/login', { data: credentials })
+//   .then((response) => {
+//     console.log()
+//        setGotData(false);
+//        setUserData(response);
+//   })
 
-}
+// }
 
    return ( gotData ?
     <>
@@ -41,7 +41,7 @@ let server = async (e) => {
     </form>
   </div>
   </section>
-    </> : <> <Profiles userData={userData}/></>
+    </> : <> <Profiles/></>
   )
 }
 

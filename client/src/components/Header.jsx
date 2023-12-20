@@ -36,7 +36,7 @@ function Header() {
             <div className="visibility">
             
             <li>
-              <a
+            <Link to="/#Home" smooth><a
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
@@ -45,10 +45,10 @@ function Header() {
                 className={isActive.home ? "under" : ""}
               >
                 Home
-              </a>
+              </a></Link> 
             </li>
             <li>
-              <a
+            <Link to="/#Activities" smooth><a
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
@@ -58,10 +58,10 @@ function Header() {
                 className={isActive.activites ? "under" : ""}
               >
                 Activites
-              </a>
+              </a></Link>
             </li>
             <li>
-              <a
+            <Link to="/#Overview" smooth><a
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
@@ -71,10 +71,10 @@ function Header() {
                 className={isActive.overview ? "under" : ""}
               >
                 Overview
-              </a>
+              </a></Link>
             </li>
             <li>
-              <a
+            <Link to="/academics/2022scheme" smooth><a
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
@@ -84,10 +84,10 @@ function Header() {
                 className={isActive.academics ? "under" : ""}
               >
                 Academics
-              </a>
+              </a></Link>
             </li>
             <li>
-              <button className="h-logout" onClick={() => navigate("/")}>
+              <button className="h-logout" onClick={()=>navigate("/login")}>
                 Login
               </button>
             </li>
@@ -101,12 +101,12 @@ function Header() {
                 }}
                 
                 >
-              <a
+              <Link to="/#Home" smooth><a
                 href=""
                 className={isActive.home ? "color" : ""}
               >
                 Home
-              </a>
+              </a></Link>
             </li>
           <li onClick={(e) => {
                   e.preventDefault();
@@ -115,12 +115,12 @@ function Header() {
                 }}
                 
                 >
-              <a
+             <Link to="/#Activities" smooth> <a
                 href=""
                 className={isActive.activites ? "color" : ""}
               >
                 Activites
-              </a>
+              </a></Link>
             </li>
           <li onClick={(e) => {
                   e.preventDefault();
@@ -129,12 +129,12 @@ function Header() {
                 }}
                 
                 >
-              <a
+              <Link to="/academics/2022scheme" smooth><a
                 href=""
                 className={isActive.academics ? "color" : ""}
               >
                 Academics
-              </a>
+              </a></Link>
             </li>
           <li onClick={(e) => {
                   e.preventDefault();
@@ -143,12 +143,12 @@ function Header() {
                 }}
                 
                 >
-              <a
+             <Link to="/#Overview" smooth> <a
                 href=""
                 className={isActive.overview ? "color" : ""}
               >
                 Overview
-              </a>
+              </a></Link>
             </li>
           
             </div>

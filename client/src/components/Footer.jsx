@@ -11,7 +11,7 @@ function Footer() {
             <img
               src="..\Images\logo.png"
               alt="logo"
-              style={{ width: "130px" }}
+              style={{ width: "90px" }}
             />
           </li>
           <li>Copyright &#169; 2023 | Learning Spark All Rights Reserved</li>

@@ -14,20 +14,18 @@ const Activities = () => {
   let Green = { background: "#06D6A0" };
   let yellow = { background: "#E74C3C" };
   return (
-    <div className="Activities" id="Activities">
+    <div className="Activities-wrapper">
+      <div className="Activities" id="Activities">
       <h1 className="title">Activites</h1>
       <h2 className="title2">Checkout our recent Activites</h2>
-      <VerticalTimeline>
+      <VerticalTimeline className="inside-timeline">
         {timelineElements.map((element) => {
-          // let isWorkIcon = element.icon === "work";
           return (
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
               dateClassName="date"
-              // iconStyle={isWorkIcon ? Green : yellow}
               iconStyle={yellow}
-              // icon={<img src={Events} alt=""/>}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
@@ -40,6 +38,7 @@ const Activities = () => {
           );
         })}
       </VerticalTimeline>
+    </div>
     </div>
   );
 };
