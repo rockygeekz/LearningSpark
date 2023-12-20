@@ -1,42 +1,161 @@
-import React, { useState } from "react"
+import React from "react";
+
+import {HashLink as Link} from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
-import '../css/index.css'
+import "../css/home2.css";
 
-const Header = () => {
+function Header() {
+  const [click, setClick] = React.useState(false);
+  let [isActive, setActive] = React.useState({
+    home: true,
+    activites: false,
+    academics: false,
+    overview: false,
+  });
   let navigate = useNavigate();
- var [lightModeClicked,setClick] = useState(true);
- let [isActive, setActive] = React.useState({
-  home: true,
-  activites: false,
-  overview:false,
+  return (
+   <>
+   <div className="gridContainer">
+    <div>
+          <img src="..\Images\logo.png" alt="logo" className="spark" />
+        </div>
 
-});
-    return (
-      <>
-        <nav className="navbar">
-          <ul className="navUl">
-              <li className="logo"><img src="..\Images\logo.png" alt="logo" style={{width:"180px"}}/></li>
-              <li className="navItems"><a href="">Home</a></li>
-              <li className="navItems"><a href="">Activites</a></li>
-              <li className="navItems"><a href="">Overview</a></li>
-              <li className="navItems"><a href="">Academics</a>
-              <div className="subNav">
-                <ul>
-                  <li onClick={()=>navigate("/academics/2018scheme")}>2018 Scheme</li>
-                  <li onClick={()=>navigate("/academics/2021scheme")}>2021 Scheme</li>
-                  <li onClick={()=>navigate("/academics/2022scheme")}>2022 Scheme</li>
-                </ul>
-              </div>
-              </li>
-              <li className="liNavBtn"> <div className="divBox"> <svg width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg></div><button className="navBtn">Login</button></li>
-      
+        <nav>
+          <ul>
+            <div className="hamburger">
+              <i
+                id="bar"
+                onClick={() => {
+                  setClick(!click)
+
+                }
+                }
+                className={click ? "fas fa-times fa-2x":"fas fa-bars fa-2x"}
+              ></i>
+            </div>
+            <div className="visibility">
+            
+            <li>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: true, activites: false,overview:false,academics:false });
+                }}
+                className={isActive.home ? "under" : ""}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive({...isActive, home: false, activites: true,overview:false,academics:false });
+
+                }}
+                className={isActive.activites ? "under" : ""}
+              >
+                Activites
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: false, activites: false,overview:true,academics:false });
+
+                }}
+                className={isActive.overview ? "under" : ""}
+              >
+                Overview
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive({...isActive, home: false, activites: false,overview:false,academics:true  });
+
+                }}
+                className={isActive.academics ? "under" : ""}
+              >
+                Academics
+              </a>
+            </li>
+            <li>
+              <button className="h-logout" onClick={() => navigate("/")}>
+                Login
+              </button>
+            </li>
+            </div>
           </ul>
-
+          <div style={{"display": click ? "block": "none"}} className="dropdown-menu">
+          <li onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: true, activites: false,overview:false,academics:false  });
+                  setClick(false);
+                }}
+                
+                >
+              <a
+                href=""
+                className={isActive.home ? "color" : ""}
+              >
+                Home
+              </a>
+            </li>
+          <li onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: false, activites: true,overview:false,academics:false  });
+                  setClick(false);
+                }}
+                
+                >
+              <a
+                href=""
+                className={isActive.activites ? "color" : ""}
+              >
+                Activites
+              </a>
+            </li>
+          <li onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: false, activites: false,overview:false,academics:true  });
+                  setClick(false);
+                }}
+                
+                >
+              <a
+                href=""
+                className={isActive.academics ? "color" : ""}
+              >
+                Academics
+              </a>
+            </li>
+          <li onClick={(e) => {
+                  e.preventDefault();
+                  setActive({ ...isActive, home: false, activites: false,overview:true,academics:false  });
+                  setClick(false);
+                }}
+                
+                >
+              <a
+                href=""
+                className={isActive.overview ? "color" : ""}
+              >
+                Overview
+              </a>
+            </li>
+          
+            </div>
         </nav>
-        
-      </>
-    )
-  }
-  
-  export default Header
-  
+        </div>
+   </>
+  )
+}
+
+export default Header

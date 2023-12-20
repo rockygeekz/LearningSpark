@@ -1,8 +1,10 @@
 import  { useState } from "react";
 import {HashLink as Link} from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 import "../css/Header2.css";
 const Header2 = () => {
   const [click, setClick] = useState(true);
+  let navigate = useNavigate();
   return (
     <div className="Header">
       <nav className="nav">
@@ -19,15 +21,9 @@ const Header2 = () => {
               <Link to="/#Overview" smooth><a href="" className="">Overview</a></Link>
             </li>
             <li>
-              <Link to="/#Academics" smooth><a href="" className="">Academics</a></Link>
+              <Link to="/academics/2022scheme" smooth><a href="" className="">Academics</a></Link>
             </li>
-            <div className="subNav">
-                <ul>
-                  <li onClick={()=>navigate("/academics/2018scheme")}>2018 Scheme</li>
-                  <li onClick={()=>navigate("/academics/2021scheme")}>2021 Scheme</li>
-                  <li onClick={()=>navigate("/academics/2022scheme")}>2022 Scheme</li>
-                </ul>
-              </div>
+            <li><button className="navBtn" onClick={()=>navigate("/login")} >Login</button></li>
           </ul>
         </div>
         <div id="device">

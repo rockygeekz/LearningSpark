@@ -25,7 +25,7 @@ function App() {
                 <Landingpage />
                 <Overview />
                 <Activities />
-                <Aboutus />
+                {/* <Aboutus /> */}
                 <Footer />
               </>
             }

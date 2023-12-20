@@ -1,11 +1,11 @@
-import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import Profiles from './profiles';
 import '../css/index.css'
-
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  let navigate = useNavigate();
   let [gotData,setGotData] = useState(true);
   let [credentials,setCredentials] = useState({name: "",password:""});
   let [userData,setUserData] = useState({})
@@ -37,7 +37,7 @@ let server = async (e) => {
       <input type="text" id="name" name="name" className='loginInput' onChange={handleChange} required/>
       <label for="password" className='loginLabel'>Password:</label>
       <input type="password" id="password" name="password" className='loginInput' onChange={handleChange} required/>
-      <button type="submit" className='loginBtn' onClick={server} >Login</button>
+      <button type="submit" className='loginBtn' onClick={()=>navigate("/login/userprofile")} >Login</button>
     </form>
   </div>
   </section>
