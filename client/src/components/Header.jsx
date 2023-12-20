@@ -44,38 +44,25 @@ function Header() {
                   navigate("/#Home")
                   setActive({ ...isActive, home: true, activites: false,overview:false,academics:false });
                 }}
-                className={isActive.home ? "under" : ""}
-              >
-                Home
-              </a></Link> 
-            </li>
+                className={isActive.home ? "under" : ""} >Home </a>
+            </Link></li>
             <li>
-            <Link to="/#Activities" smooth><a
-                href=""
-                onClick={(e) => {
+            <Link to="/#Activities" onClick={(e) => {
                   e.preventDefault();
                   navigate("/#Activities")
                   setActive({...isActive, home: false, activites: true,overview:false,academics:false });
 
                 }}
-                className={isActive.activites ? "under" : ""}
-              >
-                Activites
-              </a></Link>
+                className={isActive.activites ? "under" : ""} smooth>Activities</Link>
             </li>
             <li>
-            <Link to="/#Overview" smooth><a
-                href=""
-                onClick={(e) => {
+            <Link to="/#Overview" onClick={(e) => {
                   e.preventDefault();
                   navigate("/#Overview")
                   setActive({ ...isActive, home: false, activites: false,overview:true,academics:false });
 
                 }}
-                className={isActive.overview ? "under" : ""}
-              >
-                Overview
-              </a></Link>
+                className={isActive.overview ? "under" : ""} smooth>Overview</Link>
             </li>
             <li>
             <Link to="/academics/2022scheme" smooth><a
@@ -104,7 +91,6 @@ function Header() {
                   setClick(false);
                   navigate("/#Home")
                 }}
-                
                 >
               <Link to="/#Home" smooth><a
                 href=""

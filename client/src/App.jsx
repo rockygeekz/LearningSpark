@@ -14,8 +14,9 @@ import Landingpage from "./components/Landingpage.jsx";
 
 function App() {
   return (
-    <div className="App">
       <Router>
+    <>
+    <div className="App">
         <Routes>
           <Route
             path="/"
@@ -36,8 +37,9 @@ function App() {
           <Route exact path="/login/userProfile" element={<Profiles />} />
           <Route exact path="/2022scheme/notes" element={<NotesTable />} />
         </Routes>
-      </Router>
     </div>
+      </>
+      </Router>
   );
 }
 
