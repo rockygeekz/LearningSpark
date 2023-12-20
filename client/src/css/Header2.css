@@ -3,13 +3,13 @@
     padding: 0 3rem;
     font-size: 1.8rem;
     font-weight: 800;
-    /* position: relative; */
 }
-a {
+.links li a {
   text-decoration: none;
   color: white;
+  position: relative;
 }
-nav{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between  ;
@@ -17,19 +17,20 @@ nav{
     padding: 20px 50px;
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0,1);
     background-color: rgb(0, 0, 0,0.2);
-    position: sticky;
-    /* backdrop-filter: blur(2px); */
-    height: 50px;
+    position: fixed;
+    backdrop-filter: blur(2px);
+    height: 80px;
+    width: 100%;
 }
 .links li a:hover {
-  color: orange;
+  color: orange;  
   transition: 0.3s ease-in-out;
 }
 
 .links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .links li a:after {
@@ -43,12 +44,11 @@ nav{
   transform: scaleX(0);
   transition: transform 0.3s;
 }
+
 .links li a:hover:after,
 .links li a.active:after{
   transform: scaleX(1);
 }
-
-
 
 #device {
   color: white;
