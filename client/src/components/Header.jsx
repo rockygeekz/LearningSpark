@@ -1,6 +1,7 @@
 import React from "react";
 
-import {HashLink as Link} from "react-router-hash-link";
+// import {HashLink as Link} from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../css/home2.css";
 
@@ -21,7 +22,7 @@ function Header() {
         </div>
 
         <nav>
-          <ul>
+          <ul id={click ? "" : "active"}>
             <div className="hamburger">
               <i
                 id="bar"
@@ -37,9 +38,10 @@ function Header() {
             
             <li>
             <Link to="/#Home" smooth><a
-                href=""
+                href="/#Home"
                 onClick={(e) => {
                   e.preventDefault();
+                  navigate("/#Home")
                   setActive({ ...isActive, home: true, activites: false,overview:false,academics:false });
                 }}
                 className={isActive.home ? "under" : ""}
@@ -52,6 +54,7 @@ function Header() {
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
+                  navigate("/#Activities")
                   setActive({...isActive, home: false, activites: true,overview:false,academics:false });
 
                 }}
@@ -65,6 +68,7 @@ function Header() {
                 href=""
                 onClick={(e) => {
                   e.preventDefault();
+                  navigate("/#Overview")
                   setActive({ ...isActive, home: false, activites: false,overview:true,academics:false });
 
                 }}
@@ -75,11 +79,11 @@ function Header() {
             </li>
             <li>
             <Link to="/academics/2022scheme" smooth><a
-                href=""
+                href="/academics/2022scheme"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive({...isActive, home: false, activites: false,overview:false,academics:true  });
-
+                  navigate("/academics/2022scheme")
                 }}
                 className={isActive.academics ? "under" : ""}
               >
@@ -98,6 +102,7 @@ function Header() {
                   e.preventDefault();
                   setActive({ ...isActive, home: true, activites: false,overview:false,academics:false  });
                   setClick(false);
+                  navigate("/#Home")
                 }}
                 
                 >
@@ -112,6 +117,7 @@ function Header() {
                   e.preventDefault();
                   setActive({ ...isActive, home: false, activites: true,overview:false,academics:false  });
                   setClick(false);
+                  navigate("/#Activities")
                 }}
                 
                 >
@@ -126,6 +132,7 @@ function Header() {
                   e.preventDefault();
                   setActive({ ...isActive, home: false, activites: false,overview:false,academics:true  });
                   setClick(false);
+                  navigate("/academics/2022scheme")
                 }}
                 
                 >
@@ -140,6 +147,7 @@ function Header() {
                   e.preventDefault();
                   setActive({ ...isActive, home: false, activites: false,overview:true,academics:false  });
                   setClick(false);
+                  navigate("/#Overview")
                 }}
                 
                 >
