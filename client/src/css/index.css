@@ -814,11 +814,6 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
-  .overview-section {
-    height: 180vh;
-  }
-}
 @media (max-width: 1000px) and (min-width: 800px) {
   .overview-section {
     height: 180vh;
@@ -852,5 +847,10 @@ footer {
   }
   .description-act{
     font-size: 2rem;
+  }
+}
+@media (max-width:375px) {
+  .cards{
+    width: 100px;
   }
 }
