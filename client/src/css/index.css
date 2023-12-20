@@ -13,9 +13,11 @@ font-family: 'Playfair Display', serif; */
   margin: 0;
   padding: 0;
 }
-
+*::selection {
+  background-color: white;
+  color: black;
+}
 body {
-  /* background-color: #a3a4a5; */
   font-family: "Inter", sans-serif;
 }
 .navbar .navUl {
@@ -57,7 +59,7 @@ body {
   z-index: -1;
 }
 .animate-hero:hover {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 .divBox {
   padding: 0.3rem 0.3rem 0.1rem 0.3rem;
@@ -71,7 +73,6 @@ body {
 .divBox:hover {
   background-color: #ababab;
   cursor: pointer;
-
 }
 
 .logo {
@@ -100,9 +101,9 @@ body {
     height: 5px;
     position: absolute;
     background-color: rgb(44, 132, 240);
-    transition: all 0.5s ease-in-out;
   }
   &:hover::before {
+    transition: all 0.5s ease-in-out;
     width: 100%;
   }
 }
@@ -125,7 +126,7 @@ body {
   color: black;
   background-color: rgb(255, 255, 255);
 }
-.subNav li:hover{
+.subNav li:hover {
   background-color: #10b87a;
   cursor: pointer;
 }
@@ -135,7 +136,6 @@ body {
 
 .navItems:hover .subNav {
   display: block;
-
 }
 
 .navBtn {
@@ -268,7 +268,6 @@ video {
   overflow: hidden;
 }
 
-
 .cardsDiv span {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
@@ -377,7 +376,7 @@ footer .ul-2 li {
   list-style: none;
   text-decoration: none;
 }
-.footer-cover{
+.footer-cover {
   padding-bottom: 2rem;
   padding-top: 6rem;
   background-color: #020614;
@@ -441,11 +440,12 @@ footer .ul-2 li {
 } */
 .about {
   margin-left: 0.6rem;
-  margin-right: 0.6rem; 
+  margin-right: 0.6rem;
   color: white;
+  padding-top: 10rem;
 }
 
-.about-cover{
+.about-cover {
   background-color: #020614;
 }
 
@@ -457,8 +457,6 @@ footer .ul-2 li {
 }
 
 .right-image {
-  width: 300px;
-  height: 300px;
   margin-right: 2rem;
 }
 
@@ -467,12 +465,14 @@ footer .ul-2 li {
   margin-top: 5rem;
   justify-content: space-between;
   /* background-color: red; */
+  padding: 0 8rem 0 8rem;
 }
 .about-boxes-2 {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 5rem;
   justify-content: space-evenly;
+  padding: 0 8rem 0 8rem;
 }
 .box-head {
   font-size: 3rem;
@@ -480,20 +480,17 @@ footer .ul-2 li {
 }
 .box-content {
   margin-top: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 9rem;
   font-size: 2rem;
   width: 85%;
+  text-align: justify;
 }
 .box-content-2 {
   margin-top: 1.5rem;
-  margin-left: 2rem;
+  margin-left: -9rem;
   font-size: 2rem;
   text-align: justify;
   width: 85%;
-}
-
-.about-boxes {
-  width: 98vw;
 }
 
 .Notes {
@@ -503,7 +500,7 @@ footer .ul-2 li {
 
 .Activities {
   background-color: #020614;
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 .title {
   text-align: center;
@@ -541,26 +538,26 @@ footer .ul-2 li {
   margin-top: 1rem;
   transition: all ease 0.5s;
   margin: 2rem;
-
+  padding: 2rem;
 }
-.cards:hover{
+.cards:hover {
   scale: 1.1;
 }
 
-#card-1{
+#card-1 {
   background: url("../images/vision.jpg");
   background-size: cover;
 }
-#card-2{
+#card-2 {
   background: url("../images/login2.jpg");
   background-size: cover;
   cursor: pointer;
 }
-#card-3{
+#card-3 {
   background: url("../images/contactus.jpg");
   background-size: cover;
 }
-.vision-svg{
+.vision-svg {
   height: 100px;
   width: 100px;
   text-align: center;
@@ -594,7 +591,7 @@ footer .ul-2 li {
   flex-direction: column;
   font-size: 1.2rem;
   text-align: justify;
-  background-color: #0B2150;
+  background-color: #0b2150;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   height: 100%;
@@ -603,7 +600,7 @@ footer .ul-2 li {
   border-radius: 15%;
   transition: all ease 0.5s;
 }
-.overlay-card p{
+.overlay-card p {
   padding: 0 2rem 0 1.2rem;
 }
 .overlay-head {
@@ -611,22 +608,22 @@ footer .ul-2 li {
   margin-bottom: 1rem;
 }
 
-.overlay-card:hover{
+.overlay-card:hover {
   opacity: 1;
 }
-.media-svg{
+.media-svg {
   margin: 0 1rem 0 1rem;
 }
 
 @media (max-width: 800px) {
-  .land{
+  .land {
     display: none;
   }
-  .overview-content{
+  .overview-content {
     margin-right: 30px;
     text-align: justify;
   }
-  .card-container{
+  .card-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -640,24 +637,20 @@ footer .ul-2 li {
   }
 }
 
-  @media (max-width:800px) {
-    .right-about{
-      display: none;
-    }
-  
-    .box-content{
-      font-size: rem;
-    }
-    .about{
-      text-align: justify;
-    }
-    .box-head{
-      margin: 0 30px;
-      text-decoration: underline;
-    }
-    .box-content{
-      margin: 0 30px;
-      margin-top: 2rem;
-    }
+@media (max-width: 800px) {
+  .right-about {
+    display: none;
   }
-  
+
+  .box-content {
+    margin: 0 30px;
+    margin-top: 2rem;
+  }
+  .about {
+    text-align: justify;
+  }
+  .box-head {
+    margin: 0 30px;
+    text-decoration: underline;
+  }
+}

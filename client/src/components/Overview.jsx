@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Overview = () => {
   var navigate = useNavigate();
   return (
-    <div className="overview-section-cover">
+    <div className="overview-section-cover" id="Overview">
       <div className="overview-section">
         <div className="overview-head">Overview:</div>
         <div className="overview-content">

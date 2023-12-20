@@ -7,7 +7,7 @@ import Promise from "./Promise.svg";
 import '../css/index.css'
 const Aboutus = () => {
   return (
-    <div className="about-cover">
+    <div className="about-cover" id="About">
 
     
     <div className="about">
