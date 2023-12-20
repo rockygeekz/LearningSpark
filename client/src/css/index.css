@@ -373,13 +373,12 @@ footer .ul-2 li {
   padding: 1.6rem 1rem 1rem 1rem;
   list-style: none;
   text-decoration: none;
-  
 }
-.footer-cover{
+.footer-cover {
   background-color: #020614;
 }
 footer {
-  padding:7rem 2rem 2rem 2rem;
+  padding: 7rem 2rem 2rem 2rem;
 }
 
 .loginBody {
@@ -477,7 +476,7 @@ footer {
 .box-head {
   font-size: 3rem;
   margin-left: 1rem;
-  padding: 0 9rem ;
+  padding: 0 9rem;
   text-align: left;
 }
 .box-content {
@@ -523,12 +522,12 @@ footer {
 .card-container {
   display: flex;
   /* height: 100vh; */
-  margin: 1rem 0 3rem 4rem;
+  margin: 2rem 1rem;
 }
 
 .cards {
   height: 350px;
-  width: 400px;
+  width: 350px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid black;
   border-radius: 15%;
@@ -617,9 +616,6 @@ footer {
   margin: 0 1rem 0 1rem;
 }
 
-
-
-
 .hero-text {
   /* padding-left: 10%; */
   padding: 2rem;
@@ -657,29 +653,23 @@ footer {
   text-align: left;
 }
 
-
-
-
-
-
 @media (max-width: 1450px) {
-  
-  .animate-hero h1{
+  .animate-hero h1 {
     margin-top: 0rem;
     font-size: 6rem;
     line-height: 7rem;
   }
-  .second{
- font-size: 2rem;
+  .second {
+    font-size: 2rem;
   }
-  }
+}
 @media (max-width: 1150px) {
   /* .hero-text {
     padding: 2rem;
     margin-left: 6rem;
   } */
-  
-  .animate-hero h1{
+
+  .animate-hero h1 {
     margin-top: 0rem;
     font-size: 4rem;
     line-height: 3rem;
@@ -689,13 +679,12 @@ footer {
     line-height: 8rem;
     margin-left: 12rem;
   }
-  .second{
- font-size: 1.8rem;
+  .second {
+    font-size: 1.8rem;
   }
-  }
+}
 @media (max-width: 875px) {
-  
-  .animate-hero h1{
+  .animate-hero h1 {
     margin-top: 0rem;
     font-size: 3rem;
     line-height: 0rem;
@@ -705,22 +694,22 @@ footer {
     line-height: 6rem;
     margin-left: 9rem;
   }
-  .second{
- font-size: 1.5rem;
+  .second {
+    font-size: 1.5rem;
   }
   .hero-text button {
     font-size: 1.2rem;
     padding: 0.7rem;
     margin-top: 0.7rem;
-}
   }
+}
 @media (max-width: 650px) {
-  .hero-text{
+  .hero-text {
     padding: 2rem;
     margin-left: 1rem;
   }
-  
-  .animate-hero h1{
+
+  .animate-hero h1 {
     margin-top: 0rem;
     font-size: 3rem;
     line-height: 0rem;
@@ -730,26 +719,17 @@ footer {
     line-height: 5rem;
     margin-left: 3rem;
   }
-  .second{
- font-size: 1.4rem;
+  .second {
+    font-size: 1.4rem;
   }
   .hero-text button {
     font-size: 1.2rem;
     padding: 0.7rem;
     margin-top: 0.7rem;
-}
   }
-
-
-
-
+}
 
 @media (max-width: 800px) {
-  .land{
-    
-  .land {
-    /* display: none; */
-  }
   .overview-content {
     margin-right: 30px;
     text-align: justify;
@@ -764,6 +744,31 @@ footer {
   }
   .overview-section {
     height: 260vh;
+  }
+}
+
+@media (max-width: 1460px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #card-1,
+  #card2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .overview-content {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+  .overview-section {
+    height: 100vh;
   }
 }
 
@@ -782,5 +787,43 @@ footer {
   .box-head {
     margin: 0 30px;
     text-decoration: underline;
+  }
+  .overview-section {
+    height: 175vh;
+  }
+}
+@media (max-width: 1000px) {
+  .overview-section {
+    height: 150vh;
+  }
+}
+@media (max-width: 1120px) {
+  #Activities {
+    margin: 0 4rem;
+  }
+  .Activities-wrapper {
+    background-color: #020614;
+  }
+}
+@media (max-width: 740px) {
+  .Activities-wrapper .title {
+    font-size: 12rem;
+  }
+  .Activities-wrapper .title2 {
+    font-size: 4rem;
+  }
+  .inside-timeline{
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .Activities-wrapper .title {
+    font-size: 8rem;
+  }
+  .Activities-wrapper .title2 {
+    font-size: 4rem;
+  }
+  .inside-timeline{
+    font-size: 3rem;
   }
 }
