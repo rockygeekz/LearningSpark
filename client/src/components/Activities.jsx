@@ -1,20 +1,20 @@
-import React from 'react'
-import '../css/index.css'
+import React from "react";
+import "../css/index.css";
 
-import WorkIcon  from "./EventsLogo.jsx";
+import WorkIcon from "./EventsLogo.jsx";
 import Events from "./Events.svg";
-import timelineElements from './TimelineElements';
+import timelineElements from "./TimelineElements";
 import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
-  
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
 import "react-vertical-timeline-component/style.min.css";
 const Activities = () => {
   let Green = { background: "#06D6A0" };
-  let yellow = { background: "#f9c74f" };
+  let yellow = { background: "#E74C3C" };
   return (
-<div className='Activities' >
+    <div className="Activities" id="Activities">
       <h1 className="title">Activites</h1>
       <h2 className="title2">Checkout our recent Activites</h2>
       <VerticalTimeline>
@@ -27,7 +27,7 @@ const Activities = () => {
               dateClassName="date"
               // iconStyle={isWorkIcon ? Green : yellow}
               iconStyle={yellow}
-              // icon={<img src={Events} alt=""/>}  
+              // icon={<img src={Events} alt=""/>}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
@@ -41,7 +41,7 @@ const Activities = () => {
         })}
       </VerticalTimeline>
     </div>
-  )
-}
+  );
+};
 
-export default Activities
+export default Activities;

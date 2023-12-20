@@ -10,7 +10,7 @@ const Landingpage = () => {
   const navigate = useNavigate();
   return (
     <>
-    <div className="land">
+    <div className="land" id="Home">
       <div className="overlay-vid"></div>
       <video autoPlay muted   src="../images/bgvid22.mp4" type="video/mp4"></video>
         <div className="nav-land">
