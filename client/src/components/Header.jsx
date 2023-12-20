@@ -36,42 +36,27 @@ function Header() {
             <div className="visibility">
             
             <li>
-            <Link to="/#Home" smooth><a
-                href=""
-                onClick={(e) => {
+            <Link to="/#Home" onClick={(e) => {
                   e.preventDefault();
                   setActive({ ...isActive, home: true, activites: false,overview:false,academics:false });
                 }}
-                className={isActive.home ? "under" : ""}
-              >
-                Home
-              </a></Link> 
+                className={isActive.home ? "under" : ""} smooth>Home</Link> 
             </li>
             <li>
-            <Link to="/#Activities" smooth><a
-                href=""
-                onClick={(e) => {
+            <Link to="/#Activities" onClick={(e) => {
                   e.preventDefault();
                   setActive({...isActive, home: false, activites: true,overview:false,academics:false });
 
                 }}
-                className={isActive.activites ? "under" : ""}
-              >
-                Activites
-              </a></Link>
+                className={isActive.activites ? "under" : ""} smooth>Activities</Link>
             </li>
             <li>
-            <Link to="/#Overview" smooth><a
-                href=""
-                onClick={(e) => {
+            <Link to="/#Overview" onClick={(e) => {
                   e.preventDefault();
                   setActive({ ...isActive, home: false, activites: false,overview:true,academics:false });
 
                 }}
-                className={isActive.overview ? "under" : ""}
-              >
-                Overview
-              </a></Link>
+                className={isActive.overview ? "under" : ""} smooth>Overview</Link>
             </li>
             <li>
             <Link to="/academics/2022scheme" smooth><a
@@ -99,7 +84,6 @@ function Header() {
                   setActive({ ...isActive, home: true, activites: false,overview:false,academics:false  });
                   setClick(false);
                 }}
-                
                 >
               <Link to="/#Home" smooth><a
                 href=""
