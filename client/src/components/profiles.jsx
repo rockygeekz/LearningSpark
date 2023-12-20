@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 
 import "../css/profile.css";
 import Footer from "./Footer";

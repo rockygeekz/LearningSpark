@@ -4,6 +4,7 @@ import AnimateHero from "./AnimateHero";
 import Header from "./Header";
 import Home from "./Home";
 import Header2 from "./Header2";
+import Home2 from "./home2"
 const Landingpage = () => {
   const herotextani = "Ignite Your Learning Spark".split("");
   const navigate = useNavigate();
