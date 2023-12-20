@@ -7,7 +7,7 @@
     margin: 10px 70px 10px 70px;
 }
 
-.tableContainer h2{
+.tableContainer .tableContainer h2{
     color: white;
     background-color: rgb(0, 0, 0);
     text-align: center;

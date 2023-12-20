@@ -168,7 +168,7 @@ body {
   color: aliceblue;
 }
 .overlay-vid {
-  height: 100vh;
+  height: 120vh;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
@@ -261,9 +261,14 @@ h3 {
 }
 video {
   height: calc(100vh - 1px);
+  height: 120vh;
   width: 100%;
   object-fit: cover;
+  z-index: -100;
+  overflow: hidden;
 }
+
+
 .cardsDiv span {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
@@ -352,7 +357,7 @@ video {
 
 footer ul li {
   font-family: "Inter", sans-serif;
-  color: #444444;
+  color: white;
   font-weight: 600;
   padding-left: 1rem;
 }
@@ -360,7 +365,7 @@ footer ul li {
 footer .ul-2 li a {
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 footer .ul-2 li a:hover {
   text-decoration: underline;
@@ -428,18 +433,19 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .container {
     width: 80%;
   }
-}
+} */
 .about {
-  /* height: 100vh; */
-  /* background-color: red; */
-  /* margin-top: 3rem;
   margin-left: 0.6rem;
-  margin-right: 0.4rem; */
-  margin: 3rem 0.4rem 0 0.4rem;
+  margin-right: 0.6rem; 
+  color: white;
+}
+
+.about-cover{
+  background-color: #020614;
 }
 
 .text-head {
@@ -447,7 +453,6 @@ footer {
   font-family: "Josefin Sans", sans-serif;
   font-size: 7rem;
   font-weight: 900;
-  color: black;
 }
 
 .right-image {
@@ -459,7 +464,8 @@ footer {
 .about-boxes {
   display: flex;
   margin-top: 5rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  /* background-color: red; */
 }
 .about-boxes-2 {
   display: flex;
@@ -467,7 +473,6 @@ footer {
   margin-top: 5rem;
   justify-content: space-evenly;
 }
-
 .box-head {
   font-size: 3rem;
   margin-left: 1rem;
@@ -496,17 +501,15 @@ footer {
 }
 
 .Activities {
-  background-color: #f2f2f2;
-  font-size: 2rem;
-  /* font-family: 'Montserrat', sans-serif; */
+  background-color: #020614;
+  font-size: 2rem;  
 }
-
 .title {
   text-align: center;
   font-size: 15rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
-  color: #444444;
+  color: #fff;
   letter-spacing: -1rem;
 }
 .title2 {
@@ -514,6 +517,7 @@ footer {
   font-size: 5rem;
   font-weight: 100;
   margin-top: -1.5rem;
+  color: white;
 }
 
 .card-container {
@@ -523,11 +527,11 @@ footer {
 }
 
 .cards {
-  height: 400px;
+  height: 350px;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 15%;
   margin: 0 20px;
   border: 1px solid #e2e8f0;
   background-color: #151030;
@@ -535,6 +539,11 @@ footer {
   color: white;
   margin-top: 1rem;
   transition: all ease 0.5s;
+  margin: 2rem;
+
+}
+.cards:hover{
+  scale: 1.1;
 }
 
 #card-1{
@@ -583,14 +592,14 @@ footer {
   justify-content: center;
   flex-direction: column;
   font-size: 1.2rem;
-  text-align: left;
+  text-align: justify;
   background-color: #0B2150;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   height: 100%;
   width: 100%;
   /* background-color: red; */
-  border-radius: 10px;
+  border-radius: 15%;
   transition: all ease 0.5s;
 }
 .overlay-card p{
@@ -607,3 +616,47 @@ footer {
 .media-svg{
   margin: 0 1rem 0 1rem;
 }
+
+@media (max-width: 800px) {
+  .land{
+    display: none;
+  }
+  .overview-content{
+    margin-right: 30px;
+    text-align: justify;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .overview-section {
+    height: 260vh;
+    width: 32rem;
+  }
+}
+
+  @media (max-width:800px) {
+    .right-about{
+      display: none;
+    }
+  
+    .box-content{
+      font-size: rem;
+    }
+    .about{
+      text-align: justify;
+    }
+    .box-head{
+      margin: 0 30px;
+      text-decoration: underline;
+    }
+    .box-content{
+      margin: 0 30px;
+      margin-top: 2rem;
+    }
+  }
+  

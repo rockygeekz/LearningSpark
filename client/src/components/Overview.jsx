@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Overview = () => {
   var navigate = useNavigate();
   return (
-    <>
+    <div className="overview-section-cover">
       <div className="overview-section">
         <div className="overview-head">Overview:</div>
         <div className="overview-content">
@@ -11,7 +11,7 @@ const Overview = () => {
           peer-powered learning. We're not just another notes repository; we're
           a vibrant community built by students, for students. Here, you'll find
           more than just comprehensive notes – you'll discover a supportive
-          network of peers ready to help you excel.{" "}
+          network of peers ready to help you excel.
         </div>
         <div className="card-container">
           <Tilt>
@@ -53,7 +53,8 @@ const Overview = () => {
                   will available whole day, so donot be shy to ask questions.
                   Our is ready solve any problems so ask them without any fear.
                 </p>
-                <div style={{ textAlign: "center", marginTop: "3rem", gap:"30000px"  }} className="media-cont">
+                <div style={{ textAlign: "center", marginTop: "3rem"  }} className="media-cont">
+                      
                   <a href="">
                     <svg
                       className="media-svg"
@@ -124,6 +125,7 @@ const Overview = () => {
                       </g>
                     </svg>
                   </a>
+                  
                   <a href="">
                     <svg
                       className="media-svg"
@@ -207,40 +209,42 @@ const Overview = () => {
                     </svg>
                   </a>
                   <a href="">
-                    <svg
-                      className="media-svg"
-                      height="50px"
-                      style={{
-                        enableBackground: "new 0 0 512 512",
-                      }}
-                      version="1.1"
-                      viewBox="0 0 176 176"
-                      width="50px"
-                      x="0"
-                      xmlSpace="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
-                      y="0"
-                    >
-                      <g transform="matrix(1,0,0,1,0,0)">
-                        <path
-                          className=""
-                          d="M152 0H24A24 24 0 0 0 0 24v128a24 24 0 0 0 24 24h128a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zm-46.75 140.55c-2.82.54-3.78-1.16-3.78-2.57 0-1.76.07-7.57.07-14.8 0-5.07-1.79-8.38-3.71-10 12.23-1.33 25.09-5.9 25.09-26.66A20.71 20.71 0 0 0 117.28 72c.55-1.37 2.41-6.87-.55-14.31 0 0-4.6-1.45-15 5.54a52.85 52.85 0 0 0-27.5 0c-10.52-7-15.13-5.54-15.13-5.54-3 7.46-1.1 12.96-.53 14.31a20.64 20.64 0 0 0-5.66 14.5c0 20.7 12.84 25.35 25 26.7a11.45 11.45 0 0 0-3.48 7.23c-3.15 1.38-11.12 3.77-16-4.49 0 0-2.9-5.2-8.42-5.57 0 0-5.37-.07-.39 3.28 0 0 3.62 1.67 6.12 7.9 0 0 3.23 10.51 18.53 7.26 0 4.5.06 7.9.06 9.19s-1 3.1-3.75 2.59C48.76 133.47 33 113.22 33 89.34c0-29.85 24.61-54 55-54s55 24.2 55 54.05c0 23.79-15.74 44.06-37.75 51.16z"
-                          data-name="Layer 2"
-                          data-original="#000000"
-                          fill="#000000"
-                          opacity="1"
-                        />
-                      </g>
-                    </svg>
-                  </a>
+                        <svg
+                          className="media-svg"
+                          height="50px"
+                          style={{
+                            enableBackground: "new 0 0 512 512",
+                            backgroundColor:"white",
+                            borderRadius:"200px"
+                          }}
+                          version="1.1"
+                          viewBox="0 0 176 176"
+                          width="50px"
+                          x="0"
+                          xmlSpace="preserve"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                          y="0"
+                        >
+                          <g transform="matrix(1,0,0,1,0,0)">
+                            <path
+                              className=""
+                              d="M152 0H24A24 24 0 0 0 0 24v128a24 24 0 0 0 24 24h128a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zm-46.75 140.55c-2.82.54-3.78-1.16-3.78-2.57 0-1.76.07-7.57.07-14.8 0-5.07-1.79-8.38-3.71-10 12.23-1.33 25.09-5.9 25.09-26.66A20.71 20.71 0 0 0 117.28 72c.55-1.37 2.41-6.87-.55-14.31 0 0-4.6-1.45-15 5.54a52.85 52.85 0 0 0-27.5 0c-10.52-7-15.13-5.54-15.13-5.54-3 7.46-1.1 12.96-.53 14.31a20.64 20.64 0 0 0-5.66 14.5c0 20.7 12.84 25.35 25 26.7a11.45 11.45 0 0 0-3.48 7.23c-3.15 1.38-11.12 3.77-16-4.49 0 0-2.9-5.2-8.42-5.57 0 0-5.37-.07-.39 3.28 0 0 3.62 1.67 6.12 7.9 0 0 3.23 10.51 18.53 7.26 0 4.5.06 7.9.06 9.19s-1 3.1-3.75 2.59C48.76 133.47 33 113.22 33 89.34c0-29.85 24.61-54 55-54s55 24.2 55 54.05c0 23.79-15.74 44.06-37.75 51.16z"
+                              data-name="Layer 2"
+                              data-original="#000000"
+                              fill="#000000"
+                              opacity="3"
+                            />
+                          </g>
+                        </svg>
+                      </a>
                 </div>
               </div>
             </div>
           </Tilt>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
