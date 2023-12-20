@@ -31,9 +31,6 @@ body {
   z-index: 1000;
 }
 
-.navUl:first-child{
-}
-
 .logo{
   flex-grow: 0;
   width: 170px;
@@ -331,32 +328,6 @@ video {
     fill-mode;
 }
 
-@keyframes shaking {
-  0% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: rotate(30deg);
-  }
-  30% {
-    transform: rotate(0deg);
-  }
-  45% {
-    transform: rotate(-30deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(40deg);
-  }
-  90% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-40deg);
-  }
-}
 .footUl {
   display: flex;
   align-items: center;
@@ -713,6 +684,7 @@ footer {
     margin-top: 0.7rem;
   }
 }
+
 @media (max-width: 650px) {
   .hero-text {
     padding: 2rem;
@@ -752,9 +724,7 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-  .overview-section {
-    height: 260vh;
-  }
+
 }
 
 @media (max-width: 1460px) {
@@ -777,9 +747,7 @@ footer {
     margin-right: 3rem;
     margin-bottom: 2rem;
   }
-  .overview-section {
-    height: 100vh;
-  }
+
 }
 
 @media (max-width: 900px) {
@@ -798,9 +766,7 @@ footer {
     margin: 0 30px;
     text-decoration: underline;
   }
-  .overview-section {
-    height: 175vh;
-  }
+
 }
 
 @media (max-width: 1120px) {
@@ -811,6 +777,7 @@ footer {
     background-color: #020614;
   }
 }
+
 @media (max-width: 740px) {
   .Activities-wrapper .title {
     font-size: 12rem;
@@ -820,6 +787,9 @@ footer {
   }
   .inside-timeline {
     font-size: 3rem;
+  }
+  .overview-section {
+    height: 250vh;
   }
 }
 @media (max-width: 600px) {
@@ -832,6 +802,9 @@ footer {
   .inside-timeline {
     font-size: 3rem;
   }
+  .overview-section {
+    height: 290vh;
+  }
 }
 
 @media (max-width: 530px) {
@@ -840,14 +813,14 @@ footer {
   }
 }
 
-@media (max-width: 535px) {
+@media (max-width: 1000px) {
   .overview-section {
-    height: 130vh;
+    height: 180vh;
   }
 }
 @media (max-width: 1000px) and (min-width: 800px) {
   .overview-section {
-    height: 150vh;
+    height: 180vh;
   }
   .card-container {
     display: flex;
@@ -857,7 +830,7 @@ footer {
 }
 @media (max-width:480px) {
   .cards{
-    width: 250px;
+    width: 280px;
   }
   .title-act{
     font-size: 2rem;
