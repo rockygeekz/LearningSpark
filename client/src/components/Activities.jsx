@@ -14,8 +14,8 @@ const Activities = () => {
   let Green = { background: "#06D6A0" };
   let yellow = { background: "#E74C3C" };
   return (
-    <div className="Activities-wrapper">
-      <div className="Activities" id="Activities">
+    <div className="Activities-wrapper" id="Activities">
+      <div className="Activities">
       <h1 className="title">Activites</h1>
       <h2 className="title2">Checkout our recent Activites</h2>
       <VerticalTimeline className="inside-timeline">

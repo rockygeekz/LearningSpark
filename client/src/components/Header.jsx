@@ -1,7 +1,6 @@
 import React from "react";
 
-// import {HashLink as Link} from "react-router-hash-link";
-import { Link } from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link";
 import { useNavigate } from "react-router-dom";
 import "../css/home2.css";
 
@@ -9,9 +8,6 @@ function Header() {
   const [click, setClick] = React.useState(false);
   let [isActive, setActive] = React.useState({
     home: true,
-    activites: false,
-    academics: false,
-    overview: false,
   });
   let navigate = useNavigate();
   return (
@@ -22,7 +18,7 @@ function Header() {
         </div>
 
         <nav>
-          <ul id={click ? "" : "active"}>
+          <ul>
             <div className="hamburger">
               <i
                 id="bar"
@@ -37,45 +33,20 @@ function Header() {
             <div className="visibility">
             
             <li>
-            <Link to="/#Home" smooth><a
-                href="/#Home"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate("/#Home")
-                  setActive({ ...isActive, home: true, activites: false,overview:false,academics:false });
-                }}
-                className={isActive.home ? "under" : ""} >Home </a>
+            <Link to="/#Home" smooth>Home
             </Link></li>
             <li>
-            <Link to="/#Activities" onClick={(e) => {
-                  e.preventDefault();
-                  navigate("/#Activities")
-                  setActive({...isActive, home: false, activites: true,overview:false,academics:false });
-
-                }}
+            <Link to="/#Activities" 
                 className={isActive.activites ? "under" : ""} smooth>Activities</Link>
             </li>
             <li>
-            <Link to="/#Overview" onClick={(e) => {
-                  e.preventDefault();
-                  navigate("/#Overview")
-                  setActive({ ...isActive, home: false, activites: false,overview:true,academics:false });
-
-                }}
+            <Link to="/#Overview"
                 className={isActive.overview ? "under" : ""} smooth>Overview</Link>
             </li>
             <li>
-            <Link to="/academics/2022scheme" smooth><a
-                href="/academics/2022scheme"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActive({...isActive, home: false, activites: false,overview:false,academics:true  });
-                  navigate("/academics/2022scheme")
-                }}
-                className={isActive.academics ? "under" : ""}
-              >
+            <Link to="/academics/2022scheme" smooth>
                 Academics
-              </a></Link>
+              </Link>
             </li>
             <li>
               <button className="h-logout" onClick={()=>navigate("/login")}>
