@@ -21,6 +21,6 @@ This repo contains the source code and documentation for Learning Spark project.
 ### Running locally
 
 1. `npm run dev` to start the development server in your local repository
-1. `open http://localhost:3000` to open the site in your favorite browser
+1. `open http://localhost:5173` to open the site in your favorite browser
 
 
