@@ -16,7 +16,7 @@ This repo contains the source code and documentation for Learning Spark project.
 3. `cd client` to go into the project root
 4. `npm i` to install the website's npm dependencies
 
-
+![Screenshot](screenshot.png)
 
 ### Running locally
 
